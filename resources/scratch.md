@@ -10,6 +10,8 @@ https://github.com/topics/machine-learning
 
 
 https://huggingface.co/docs
+https://github.com/huggingface
+
 
 https://www.reddit.com/r/LocalLLaMA/
 
