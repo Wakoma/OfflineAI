@@ -14,6 +14,17 @@ https://en.wikipedia.org/wiki/Generative_artificial_intelligence
 
 
 
+
+
+## SmolLM2
+
+
+SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device.
+
+https://github.com/huggingface/smollm/tree/main
+
+
+
 ## Anything LLM
 https://github.com/Mintplex-Labs/anything-llm
 
@@ -160,6 +171,12 @@ https://github.com/LostRuins/koboldcpp
 ## Translation
 
 # Code
+
+
+https://ollama.com/library/qwen2.5-coder
+
+
+
 
 # Images
 
