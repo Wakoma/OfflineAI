@@ -1,9 +1,23 @@
+# Table of Contents
 
-
+- [Table of Contents](#table-of-contents)
 - [General Resources](#general-resources)
+  - [Models](#models)
+  - [Wiki Articles](#wiki-articles)
+  - [Reddit Groups](#reddit-groups)
+  - [Awesome Lists](#awesome-lists)
+  - [Prompt Engineering](#prompt-engineering)
+  - [AI research](#ai-research)
+- [Running LLM on Android](#running-llm-on-android)
+  - [Maid - Mobile Artificial Intelligence Distribution](#maid---mobile-artificial-intelligence-distribution)
+  - [MLC LLM](#mlc-llm)
+  - [ChatterUI](#chatterui)
+  - [smolchat Android](#smolchat-android)
 - [Text](#text)
-  - [RAG](#rag)
+  - [llamafile](#llamafile)
+  - [smol-tools](#smol-tools)
   - [SmolLM2](#smollm2)
+  - [smol-course](#smol-course)
   - [Anything LLM](#anything-llm)
   - [Ollama](#ollama)
   - [GPT4All](#gpt4all)
@@ -18,7 +32,9 @@
   - [jan](#jan)
   - [localGPT](#localgpt)
   - [koboldcpp](#koboldcpp)
-  - [Translation](#translation)
+  - [Text - Translation](#text---translation)
+- [Text - RAG](#text---rag)
+  - [Android-Document-QA](#android-document-qa)
 - [Code](#code)
 - [Images](#images)
   - [Fooocus](#fooocus)
@@ -27,18 +43,108 @@
   - [Stable Diffusion web UI](#stable-diffusion-web-ui)
   - [ComfyUI](#comfyui)
 - [Audio](#audio)
-  - [Speech-to-text](#speech-to-text)
-  - [Text-to-speech](#text-to-speech)
+  - [Whisper](#whisper)
+      - [How to install and use Whisper offline (no internet required)](#how-to-install-and-use-whisper-offline-no-internet-required)
+  - [local-talking-llm](#local-talking-llm)
   - [Music](#music)
 - [Video](#video)
 - [CAD](#cad)
 
 
 
-
 # General Resources
 
+LocalML Zotero Library: https://www.zotero.org/groups/5718368/localml/library
+
+https://huggingface.co/docs
+
+https://github.com/huggingface
+
+https://github.com/huggingface/transformers
+
+## Models
+
+
+https://huggingface.co/models
+
+https://github.com/Troyanovsky/Local-LLM-Comparison-Colab-UI
+
+https://www.openml.org/
+
+
+## Wiki Articles
 https://en.wikipedia.org/wiki/Generative_artificial_intelligence
+
+## Reddit Groups
+https://www.reddit.com/r/LocalLLaMA/
+
+https://www.reddit.com/r/MachineLearning/
+
+https://www.reddit.com/r/MLQuestions/
+
+## Awesome Lists
+
+https://github.com/janhq/awesome-local-ai
+
+https://github.com/vince-lam/awesome-local-llms
+
+https://github.com/mahseema/awesome-ai-tools
+
+https://github.com/steven2358/awesome-generative-ai
+
+## Prompt Engineering
+
+
+https://www.promptingguide.ai/
+https://github.com/dair-ai/Prompt-Engineering-Guide
+
+https://github.com/f/awesome-chatgpt-prompts
+
+
+ ## AI research 
+
+https://github.com/youssefHosni/Awesome-AI-Data-GitHub-Repos
+
+ https://github.com/aimerou/awesome-ai-papers
+
+ https://github.com/DefTruth/Awesome-LLM-Inference
+
+
+
+# Running LLM on Android
+
+
+## Maid - Mobile Artificial Intelligence Distribution
+
+Maid is a cross-platform free and an open-source application for interfacing with llama.cpp models locally, and remotely with Ollama, Mistral, Google Gemini and OpenAI models remotely. Maid supports sillytavern character cards to allow you to interact with all your favorite characters. Maid supports downloading a curated list of Models in-app directly from huggingface.
+
+https://github.com/Mobile-Artificial-Intelligence/maid
+
+## MLC LLM
+
+MLC LLM is a machine learning compiler and high-performance deployment engine for large language models. The mission of this project is to enable everyone to develop, optimize, and deploy AI models natively on everyone's platforms. 
+
+https://github.com/mlc-ai/mlc-llm
+
+## ChatterUI
+ChatterUI is a native mobile frontend for LLMs.
+
+Run LLMs on device or connect to various commercial or open source APIs. ChatterUI aims to provide a mobile-friendly interface with fine-grained control over chat structuring.
+
+https://github.com/Vali-98/ChatterUI
+
+
+## smolchat Android
+
+Project Goals
+
+    Provide a usable user interface to interact with local SLMs (small language models) locally, on-device
+    Allow users to add/remove SLMs (GGUF models) and modify their system prompts or inference parameters (temperature, min-p)
+    Allow users to create specific-downstream tasks quickly and use SLMs to generate responses
+    Simple, easy to understand, extensible codebase
+
+
+https://github.com/shubham0204/SmolChat-Android
 
 
 
@@ -46,11 +152,22 @@ https://en.wikipedia.org/wiki/Generative_artificial_intelligence
 
 
 
+## llamafile
 
-## RAG
+llamafile lets you distribute and run LLMs with a single file. 
+
+https://github.com/Mozilla-Ocho/llamafile
 
 
 
+
+
+
+## smol-tools
+
+A collection of lightweight AI-powered tools built with LLaMA.cpp and small language models. These tools are designed to run locally on your machine without requiring expensive GPU resources. They can also run offline, without any internet connection.
+
+https://github.com/huggingface/smollm/blob/main/smol_tools/README.md
 
 
 ## SmolLM2
@@ -59,6 +176,26 @@ https://en.wikipedia.org/wiki/Generative_artificial_intelligence
 SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device.
 
 https://github.com/huggingface/smollm/tree/main
+
+
+## smol-course
+
+This is a practical course on aligning language models for your specific use case. It's a handy way to get started with aligning language models, because everything runs on most local machines. There are minimal GPU requirements and no paid services. The course is based on the SmolLM2 series of models, but you can transfer the skills you learn here to larger models or other small language models.
+
+https://github.com/huggingface/smol-course
+
+Why Small Language Models?
+
+While large language models have shown impressive capabilities, they often require significant computational resources and can be overkill for focused applications. Small language models offer several advantages for domain-specific applications:
+
+    Efficiency: Require significantly less computational resources to train and deploy
+    Customization: Easier to fine-tune and adapt to specific domains
+    Control: Better understanding and control of model behavior
+    Cost: Lower operational costs for training and inference
+    Privacy: Can be run locally without sending data to external APIs
+    Green Technology: Advocates efficient usage of resources with reduced carbon footprint
+    Easier Academic Research Development: Provides an easy starter for academic research with cutting-edge LLMs with less logistical constraints
+
 
 
 
@@ -74,6 +211,10 @@ ollama.com
 https://github.com/ollama/ollama
 
 Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models. 
+
+
+Run LLMs locally without internet with Ollama
+https://medium.com/@pratikgtm/run-llms-locally-without-internet-with-ollama-1305ee83ceb7
 
 
 ## GPT4All
@@ -205,7 +346,23 @@ https://github.com/LostRuins/koboldcpp
 
 
 
-## Translation
+## Text - Translation
+
+
+
+# Text - RAG
+
+
+
+##  Android-Document-QA
+
+    A simple Android app that allows the user to add a PDF/DOCX document and ask natural-language questions whose answers are generated by the means of an LLM
+
+
+https://github.com/shubham0204/Android-Document-QA
+
+
+
 
 # Code
 
@@ -269,14 +426,34 @@ https://github.com/comfyanonymous/ComfyUI
 
 # Audio
 
-## Speech-to-text
+
+## Whisper
+
+Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification.
+
+A Transformer sequence-to-sequence model is trained on various speech processing tasks, including multilingual speech recognition, speech translation, spoken language identification, and voice activity detection. These tasks are jointly represented as a sequence of tokens to be predicted by the decoder, allowing a single model to replace many stages of a traditional speech-processing pipeline. The multitask training format uses a set of special tokens that serve as task specifiers or classification targets.
+
+https://github.com/openai/whisper
+
+https://arxiv.org/pdf/2212.04356
+
+
+#### How to install and use Whisper offline (no internet required)
+
+Purpose: These instructions cover the steps not explicitly set out on the main Whisper page, e.g. for those who have never used python code/apps before and do not have the prerequisite software already installed.
+
+https://github.com/openai/whisper/discussions/1463
+
+https://github.com/Purfview/whisper-standalone-win
 
 
 
 
-## Text-to-speech
+## local-talking-llm
 
+After my latest post about how to build your own RAG and run it locally. Today, we're taking it a step further by not only implementing the conversational abilities of large language models but also adding listening and speaking capabilities. The idea is straightforward: we are going to create a voice assistant reminiscent of Jarvis or Friday from the iconic Iron Man movies, which can operate offline on your computer. Since this is an introductory tutorial, I will implement it in Python and keep it simple enough for beginners. Lastly, I will provide some guidance on how to scale the application. 
 
+https://github.com/vndee/local-talking-llm
 
 
 ## Music
