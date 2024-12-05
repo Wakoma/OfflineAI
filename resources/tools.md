@@ -1,4 +1,41 @@
 
+
+- [General Resources](#general-resources)
+- [Text](#text)
+  - [RAG](#rag)
+  - [SmolLM2](#smollm2)
+  - [Anything LLM](#anything-llm)
+  - [Ollama](#ollama)
+  - [GPT4All](#gpt4all)
+  - [Llama.cpp](#llamacpp)
+  - [gpt4free](#gpt4free)
+  - [private-gpt](#private-gpt)
+  - [Open WebUI](#open-webui)
+  - [Lobe Chat](#lobe-chat)
+  - [Text generation web UI](#text-generation-web-ui)
+  - [vllm](#vllm)
+  - [AnythingLLM](#anythingllm)
+  - [jan](#jan)
+  - [localGPT](#localgpt)
+  - [koboldcpp](#koboldcpp)
+  - [Translation](#translation)
+- [Code](#code)
+- [Images](#images)
+  - [Fooocus](#fooocus)
+  - [Generative AI for Krita](#generative-ai-for-krita)
+  - [SD.Next](#sdnext)
+  - [Stable Diffusion web UI](#stable-diffusion-web-ui)
+  - [ComfyUI](#comfyui)
+- [Audio](#audio)
+  - [Speech-to-text](#speech-to-text)
+  - [Text-to-speech](#text-to-speech)
+  - [Music](#music)
+- [Video](#video)
+- [CAD](#cad)
+
+
+
+
 # General Resources
 
 https://en.wikipedia.org/wiki/Generative_artificial_intelligence
