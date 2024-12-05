@@ -13,18 +13,23 @@
   - [MLC LLM](#mlc-llm)
   - [ChatterUI](#chatterui)
   - [smolchat Android](#smolchat-android)
+- [Running LLM on Docker](#running-llm-on-docker)
+  - [Open WebUI](#open-webui)
+  - [Ollama](#ollama)
+  - [OpenVINO](#openvino)
+  - [PrivateGPT](#privategpt)
 - [Text](#text)
   - [llamafile](#llamafile)
   - [smol-tools](#smol-tools)
   - [SmolLM2](#smollm2)
   - [smol-course](#smol-course)
   - [Anything LLM](#anything-llm)
-  - [Ollama](#ollama)
+  - [Ollama](#ollama-1)
   - [GPT4All](#gpt4all)
   - [Llama.cpp](#llamacpp)
   - [gpt4free](#gpt4free)
   - [private-gpt](#private-gpt)
-  - [Open WebUI](#open-webui)
+  - [Open WebUI](#open-webui-1)
   - [Lobe Chat](#lobe-chat)
   - [Text generation web UI](#text-generation-web-ui)
   - [vllm](#vllm)
@@ -34,6 +39,9 @@
   - [koboldcpp](#koboldcpp)
   - [Text - Translation](#text---translation)
 - [Text - RAG](#text---rag)
+  - [Sort](#sort)
+  - [Datasets](#datasets)
+  - [WikiChat](#wikichat)
   - [Android-Document-QA](#android-document-qa)
 - [Code](#code)
 - [Images](#images)
@@ -145,6 +153,25 @@ Project Goals
 
 
 https://github.com/shubham0204/SmolChat-Android
+
+
+# Running LLM on Docker
+
+Discussion: https://www.reddit.com/r/LocalLLaMA/comments/17v5r0p/a_fun_day_evaluating_llm_chat_guisservers_in/
+
+## Open WebUI
+https://github.com/open-webui/open-webui
+
+https://docs.openwebui.com/
+
+## Ollama
+https://hub.docker.com/r/ollama/ollama
+
+## OpenVINO
+https://docs.openvino.ai/2024/index.html
+
+## PrivateGPT
+https://github.com/zylon-ai/private-gpt
 
 
 
@@ -351,6 +378,27 @@ https://github.com/LostRuins/koboldcpp
 
 
 # Text - RAG
+
+## Sort
+
+https://medium.com/@nydas/building-an-offline-rag-chatbot-with-custom-frontend-and-websockets-3a739878adf1
+
+https://github.com/jonfairbanks/local-rag
+
+
+
+
+## Datasets
+
+https://www.reddit.com/r/LocalLLaMA/comments/1bjlzna/whats_the_fastest_route_to_success_to_performing/
+
+https://huggingface.co/datasets/legacy-datasets/wikipedia
+
+## WikiChat
+
+Large language model (LLM) chatbots like ChatGPT and GPT-4 get things wrong a lot, especially if the information you are looking for is recent ("Tell me about the 2024 Super Bowl.") or about less popular topics ("What are some good movies to watch from [insert your favorite foreign director]?"). WikiChat uses Wikipedia and the following 7-stage pipeline to makes sure its responses are factual. Each numbered stage involves one or more LLM calls.
+
+https://github.com/stanford-oval/WikiChat
 
 
 
