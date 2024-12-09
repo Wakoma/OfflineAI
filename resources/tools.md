@@ -2,9 +2,11 @@
 
 - [Table of Contents](#table-of-contents)
 - [General Resources](#general-resources)
+  - [Leaderboards](#leaderboards)
+    - [Livebench](#livebench)
   - [Models](#models)
   - [Wiki Articles](#wiki-articles)
-  - [Reddit Groups](#reddit-groups)
+  - [Reddit Groups and Discussions](#reddit-groups-and-discussions)
   - [Awesome Lists](#awesome-lists)
   - [Prompt Engineering](#prompt-engineering)
   - [AI research](#ai-research)
@@ -44,6 +46,9 @@
   - [WikiChat](#wikichat)
   - [Android-Document-QA](#android-document-qa)
 - [Code](#code)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building)
+  - [Qwen2.5](#qwen25)
+  - [Claude 3.5 Sonnet](#claude-35-sonnet)
 - [Image Generation](#image-generation)
   - [Fooocus](#fooocus)
   - [Generative AI for Krita](#generative-ai-for-krita)
@@ -55,8 +60,16 @@
       - [How to install and use Whisper offline (no internet required)](#how-to-install-and-use-whisper-offline-no-internet-required)
   - [local-talking-llm](#local-talking-llm)
   - [Music](#music)
+    - [FluxMusic](#fluxmusic)
+    - [OpenMusic](#openmusic)
 - [Video Generation](#video-generation)
+  - [Awesome Video Diffusion](#awesome-video-diffusion)
+  - [CogVideo](#cogvideo)
+  - [LTX-Video](#ltx-video)
 - [CAD Generation](#cad-generation)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-1)
+  - [Trellis](#trellis)
+  - [Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts](#text2cad-generating-sequential-cad-designs-from-beginner-to-expert-level-text-prompts)
 
 
 
@@ -69,6 +82,13 @@ https://huggingface.co/docs
 https://github.com/huggingface
 
 https://github.com/huggingface/transformers
+
+## Leaderboards
+
+### Livebench
+https://livebench.ai/#/
+
+
 
 ## Models
 
@@ -83,12 +103,15 @@ https://www.openml.org/
 ## Wiki Articles
 https://en.wikipedia.org/wiki/Generative_artificial_intelligence
 
-## Reddit Groups
+## Reddit Groups and Discussions
 https://www.reddit.com/r/LocalLLaMA/
 
 https://www.reddit.com/r/MachineLearning/
 
 https://www.reddit.com/r/MLQuestions/
+
+
+Can a 3b model with sufficiently high quality training data outperform a 70b models at specialized tasks?  https://www.reddit.com/r/LocalLLaMA/comments/1h9c6cu/can_a_3b_model_with_sufficiently_high_quality/
 
 ## Awesome Lists
 
@@ -415,14 +438,33 @@ https://github.com/shubham0204/Android-Document-QA
 
 # Code
 
+## Why might this be useful for community networking and/or capacity building?
+
+In underconnected communities without access to resources such as stackoverflow, offline ML coding tools could be use for software development and education. 
+
+
+## Qwen2.5
+
+Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. 
+
+https://huggingface.co/Qwen/Qwen2.5-72B-Instruct
+
+https://github.com/QwenLM/Qwen2.5
+
+https://arxiv.org/pdf/2409.12186
 
 https://ollama.com/library/qwen2.5-coder
 
+https://venturebeat.com/ai/alibaba-new-ai-can-code-in-92-languages-and-its-completely-free/
 
+https://www.reddit.com/r/LocalLLaMA/comments/1h7nsg2/are_you_still_happy_with_qwen25_coder_32b/
+
+## Claude 3.5 Sonnet
+
+https://www.anthropic.com/news/3-5-models-and-computer-use
 
 
 # Image Generation
-
 
 
 
@@ -471,8 +513,6 @@ https://github.com/comfyanonymous/ComfyUI
 
 
 
-
-
 # Audio
 
 
@@ -505,11 +545,71 @@ After my latest post about how to build your own RAG and run it locally. Today, 
 https://github.com/vndee/local-talking-llm
 
 
+
+
 ## Music
+
+### FluxMusic
+
+https://github.com/feizc/FluxMusic
+
+Text-to-Music Generation with Rectified Flow Transformers 
+
+
+### OpenMusic
+
+OpenMusic: SOTA Text-to-music (TTM) Generation 
+
+https://github.com/ivcylc/qa-mdt
+
+
 
 # Video Generation
 
 
+## Awesome Video Diffusion
+
+A curated list of recent diffusion models for video generation, editing, restoration, understanding, nerf, etc.
+
+https://github.com/showlab/Awesome-Video-Diffusion
+
+
+## CogVideo
+text and image to video generation
+
+https://github.com/THUDM/CogVideo
+
+Demo: https://huggingface.co/spaces/THUDM/CogVideoX-5B-Space
+
+
+## LTX-Video
+
+LTX-Video is the first DiT-based video generation model that can generate high-quality videos in real-time. It can generate 24 FPS videos at 768x512 resolution, faster than it takes to watch them. The model is trained on a large-scale dataset of diverse videos and can generate high-resolution videos with realistic and diverse content.
+
+https://github.com/Lightricks/LTX-Video
+
+
+
 # CAD Generation
 
+## Why might this be useful for community networking and/or capacity building?
+
+Users without technical expertise in 3D printing/additive manufacturing would be able to type in a prompt or use a reference image to generate a 3D model which could be printed/built locally. For example one could type the dimensions of a mount or bracket, or hardware case, to produce a CAD model for local production.
+
+
+
+## Trellis
+
+https://trellis3d.github.io/
+
+https://github.com/Microsoft/TRELLIS
+
+https://huggingface.co/spaces/JeffreyXiang/TRELLIS
+
+
+TRELLIS is a large 3D asset generation model. It takes in text or image prompts and generates high-quality 3D assets in various formats, such as Radiance Fields, 3D Gaussians, and meshes. The cornerstone of TRELLIS is a unified Structured LATent (SLAT) representation that allows decoding to different output formats and Rectified Flow Transformers tailored for SLAT as the powerful backbones. We provide large-scale pre-trained models with up to 2 billion parameters on a large 3D asset dataset of 500K diverse objects. TRELLIS significantly surpasses existing methods, including recent ones at similar scales, and showcases flexible output format selection and local 3D editing capabilities which were not offered by previous models.
+
+
+## Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts
+https://sadilkhan.github.io/text2cad-project/
 
