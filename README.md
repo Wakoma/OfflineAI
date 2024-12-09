@@ -7,7 +7,7 @@ The Main list of tools can be found here: https://github.com/Wakoma/LocalML/blob
 
 The shared Zotero Library for this project can be found here: https://www.zotero.org/groups/5718368/localml/library
 
-This research project is funded by [APC](https://www.apc.org/). 
+This research project is generously funded by [APC](https://www.apc.org/). 
 
 
 ## Benefits of Local/Offline ML
