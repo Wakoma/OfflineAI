@@ -50,6 +50,7 @@
   - [Qwen2.5](#qwen25)
   - [Claude 3.5 Sonnet](#claude-35-sonnet)
 - [Image Generation](#image-generation)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-1)
   - [Fooocus](#fooocus)
   - [Generative AI for Krita](#generative-ai-for-krita)
   - [SD.Next](#sdnext)
@@ -67,7 +68,7 @@
   - [CogVideo](#cogvideo)
   - [LTX-Video](#ltx-video)
 - [CAD Generation](#cad-generation)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-1)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-2)
   - [Trellis](#trellis)
   - [Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts](#text2cad-generating-sequential-cad-designs-from-beginner-to-expert-level-text-prompts)
 
@@ -440,7 +441,11 @@ https://github.com/shubham0204/Android-Document-QA
 
 ## Why might this be useful for community networking and/or capacity building?
 
-In underconnected communities without access to resources such as stackoverflow, offline ML coding tools could be use for software development and education. 
+- In underconnected communities without access to resources such as stackoverflow, offline ML coding tools could be use for software development and education. 
+
+- AI-assisted coding tools can empower local citizen scientists to analyze data collected offline (e.g., weather patterns, agricultural yields, health trends) and develop solutions using generated code.
+
+
 
 
 ## Qwen2.5
@@ -466,6 +471,12 @@ https://www.anthropic.com/news/3-5-models-and-computer-use
 
 # Image Generation
 
+## Why might this be useful for community networking and/or capacity building?
+
+- Imagine a community wanting to build its own Wi-Fi network using readily available materials. AI image generation could translate technical instructions into clear visual guides. Complex steps like wiring hardware, configuring antennas, or troubleshooting connections could be illustrated through easily understandable diagrams and animations.
+- Communities can create localized learning materials by generating visuals for topics ranging from basic computer literacy to advanced networking concepts. This empowers individuals to acquire technical skills independently, fostering self-reliance and innovation.
+- Communities can use AI to generate visualizations of potential connectivity infrastructure based on their specific geography and needs. This helps them plan strategically, identify optimal locations for access points
+  
 
 
 ## Fooocus
@@ -596,6 +607,9 @@ https://github.com/Lightricks/LTX-Video
 
 Users without technical expertise in 3D printing/additive manufacturing would be able to type in a prompt or use a reference image to generate a 3D model which could be printed/built locally. For example one could type the dimensions of a mount or bracket, or hardware case, to produce a CAD model for local production.
 
+Individuals without specialized training can leverage these tools to create customized designs for 3D printing, potentially leading to local production of connectivity-related tools, educational models, and more. This fosters self-reliance and innovation at a grassroots level.
+
+On-demand repairs facilitated by AI-generated instructions.
 
 
 ## Trellis
