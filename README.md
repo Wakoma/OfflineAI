@@ -16,3 +16,5 @@ The shared Zotero Library for this project can be found here: https://www.zotero
 This research project is generously funded by [APC](https://www.apc.org/). 
 
 Contributions/issues/PRs are very welcome.
+
+CC-BY-SA-4.0
