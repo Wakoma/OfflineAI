@@ -11,8 +11,8 @@
   - [Prompt Engineering](#prompt-engineering)
   - [AI research](#ai-research)
 - [Running LLM on Android](#running-llm-on-android)
-  - [Maid - Mobile Artificial Intelligence Distribution](#maid---mobile-artificial-intelligence-distribution)
   - [MLC LLM](#mlc-llm)
+  - [Maid - Mobile Artificial Intelligence Distribution](#maid---mobile-artificial-intelligence-distribution)
   - [ChatterUI](#chatterui)
   - [smolchat Android](#smolchat-android)
 - [Running LLM on Docker](#running-llm-on-docker)
@@ -40,6 +40,7 @@
   - [localGPT](#localgpt)
   - [koboldcpp](#koboldcpp)
 - [Text - Translation](#text---translation)
+  - [InkubaLM](#inkubalm)
 - [Text - RAG](#text---rag)
   - [Sort](#sort)
   - [Datasets](#datasets)
@@ -87,6 +88,7 @@ https://github.com/huggingface/transformers
 ## Leaderboards
 
 ### Livebench
+
 https://livebench.ai/#/
 
 
@@ -146,6 +148,24 @@ https://github.com/youssefHosni/Awesome-AI-Data-GitHub-Repos
 
 # Running LLM on Android
 
+## MLC LLM
+
+MLC LLM is a machine learning compiler and high-performance deployment engine for large language models. The mission of this project is to enable everyone to develop, optimize, and deploy AI models natively on everyone's platforms. 
+
+https://github.com/mlc-ai/mlc-llm
+
+https://www.xda-developers.com/run-local-llms-smartphone/
+
+https://www.reddit.com/r/LocalLLaMA/comments/16t0lbw/best_model_to_run_locally_on_an_android_phone/
+
+https://llm.mlc.ai/docs/deploy/android.html
+
+https://www.kdnuggets.com/install-run-llms-locally-android-phones
+
+https://beebom.com/how-run-llm-locally-mlc-chat-android-phones/
+
+
+
 
 ## Maid - Mobile Artificial Intelligence Distribution
 
@@ -153,11 +173,7 @@ Maid is a cross-platform free and an open-source application for interfacing wit
 
 https://github.com/Mobile-Artificial-Intelligence/maid
 
-## MLC LLM
 
-MLC LLM is a machine learning compiler and high-performance deployment engine for large language models. The mission of this project is to enable everyone to develop, optimize, and deploy AI models natively on everyone's platforms. 
-
-https://github.com/mlc-ai/mlc-llm
 
 ## ChatterUI
 ChatterUI is a native mobile frontend for LLMs.
@@ -399,6 +415,22 @@ https://github.com/LostRuins/koboldcpp
 
 
 # Text - Translation
+
+
+## InkubaLM
+
+Africa’s first multilingual AI large language model, aimed at supporting and enhancing low-resource African languages. The model is starting with Swahili, Yoruba, IsiXhosa, Hausa, and isiZulu. This model is named after the dung beetle for its efficient design and seeks to address the digital underrepresentation of these languages by providing tools for translation, transcription, and various natural language processing tasks. InkubaLM is designed to be robust yet compact, leveraging two datasets—Inkuba-Mono and Inkuba-Instruct—to pre-train and enhance the model’s capabilities across the five selected languages. 
+
+Lelapa AI is committed to linguistic diversity and digital inclusivity by offering open access to the model and its resources. By providing tools and datasets that facilitate the development of digital solutions, Lelapa AI aims to empower African communities and ensure that their languages are better represented in the digital space. This approach not only supports language preservation but also strives to make advanced AI technologies more accessible and relevant to users in Africa. 
+
+“Our language model is not just a technological achievement; it is a step towards greater linguistic equality and cultural preservation,” said Atnafu Tonja, fundamental research lead at Lelapa AI.  
+
+https://arxiv.org/html/2408.17024v1
+
+https://medium.com/@lelapa_ai/inkubalm-a-small-language-model-for-low-resource-african-languages-dc9793842dec
+
+https://huggingface.co/lelapa/InkubaLM-0.4B
+
 
 
 
