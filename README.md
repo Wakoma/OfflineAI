@@ -9,6 +9,8 @@ We will attempt to label any closed source tools as such.
 
 The Main list of tools can be found here: https://github.com/Wakoma/LocalML/blob/main/resources/tools.md.
 
+Implementation considerations for local/offline ML can be found here: https://github.com/Wakoma/LocalML/blob/main/resources/considerations.md
+
 The shared Zotero Library for this project can be found here: https://www.zotero.org/groups/5718368/localml/library
 
 This research project is generously funded by [APC](https://www.apc.org/). 

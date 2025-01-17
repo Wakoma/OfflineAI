@@ -1,4 +1,19 @@
 
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Benefits of/Reasons for Doing Local/Offline ML](#benefits-ofreasons-for-doing-localoffline-ml)
+- [Challenges of Local/Offline ML](#challenges-of-localoffline-ml)
+- [Resource requirements](#resource-requirements)
+  - [Strategies for Mitigating Resource Requirements:](#strategies-for-mitigating-resource-requirements)
+- [Running LLMs Low End PCs](#running-llms-low-end-pcs)
+  - [tl:dr](#tldr)
+  - [RAG](#rag)
+  - [Clippings](#clippings)
+- [Image Generation on Low-End PCs](#image-generation-on-low-end-pcs)
+  - [tl:dr](#tldr-1)
+  - [Clippings](#clippings-1)
+- [Audio on Low-End PCs](#audio-on-low-end-pcs)
 
 
 # Benefits of/Reasons for Doing Local/Offline ML
