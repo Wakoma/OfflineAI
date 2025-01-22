@@ -27,14 +27,13 @@ CC-BY-SA-4.0
   - [Challenges of Local/Offline ML](#challenges-of-localoffline-ml)
   - [Resource requirements](#resource-requirements)
   - [Strategies for Mitigating Resource Requirements:](#strategies-for-mitigating-resource-requirements)
-  - [Running LLMs Low End PCs](#running-llms-low-end-pcs)
+  - [Text-Generation on Low End PCs](#text-generation-on-low-end-pcs)
     - [Clippings related to text-generation on low-end PCs.](#clippings-related-to-text-generation-on-low-end-pcs)
   - [Image Generation on Low-End PCs](#image-generation-on-low-end-pcs)
     - [Clippings related to image-generation on low-end PCs.](#clippings-related-to-image-generation-on-low-end-pcs)
   - [Speech on Low-End PCs](#speech-on-low-end-pcs)
-- [Local Machine Learning Limitations](#local-machine-learning-limitations)
-- [Local Machine Learning Tools and Platforms](#local-machine-learning-tools-and-platforms)
-  - [General Resources](#general-resources)
+  - [Additional Local Machine Learning Limitations](#additional-local-machine-learning-limitations)
+- [Local Machine Learning General Resources](#local-machine-learning-general-resources)
     - [Hugging Face](#hugging-face)
   - [Leaderboards](#leaderboards)
     - [Livebench](#livebench)
@@ -44,17 +43,18 @@ CC-BY-SA-4.0
   - [GitHub Awesome Lists](#github-awesome-lists)
   - [Prompt Engineering](#prompt-engineering)
   - [AI research](#ai-research)
-- [Running LLM on Android Devices](#running-llm-on-android-devices)
-  - [MLC LLM](#mlc-llm)
-  - [Maid - Mobile Artificial Intelligence Distribution](#maid---mobile-artificial-intelligence-distribution)
-  - [ChatterUI](#chatterui)
-  - [smolchat Android](#smolchat-android)
-- [Running LLM on Docker](#running-llm-on-docker)
+- [Text Generation Tools and Platforms](#text-generation-tools-and-platforms)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building)
+  - [Running LLM on Android Devices](#running-llm-on-android-devices)
+    - [MLC LLM](#mlc-llm)
+    - [Maid - Mobile Artificial Intelligence Distribution](#maid---mobile-artificial-intelligence-distribution)
+    - [ChatterUI](#chatterui)
+    - [smolchat Android](#smolchat-android)
+  - [Running LLM on Docker](#running-llm-on-docker)
   - [Open WebUI](#open-webui)
   - [Ollama](#ollama)
   - [OpenVINO](#openvino)
   - [PrivateGPT](#privategpt)
-- [Text Generation Tools and Platforms](#text-generation-tools-and-platforms)
   - [Anything LLM](#anything-llm)
   - [Ollama](#ollama-1)
   - [GPT4All](#gpt4all)
@@ -73,42 +73,42 @@ CC-BY-SA-4.0
   - [Lobe Chat](#lobe-chat)
   - [Text generation web UI](#text-generation-web-ui)
   - [localGPT](#localgpt)
-- [Text - Translation](#text---translation)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building)
-  - [InkubaLM](#inkubalm)
-- [Text - RAG](#text---rag)
+- [Text - Translation Tools and Platforms](#text---translation-tools-and-platforms)
   - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-1)
+  - [InkubaLM](#inkubalm)
+- [Text - RAG Tools and Platforms](#text---rag-tools-and-platforms)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-2)
   - [Sort](#sort)
   - [Datasets](#datasets)
   - [WikiChat](#wikichat)
   - [Android-Document-QA](#android-document-qa)
-- [Code](#code)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-2)
+- [Coding Tools and Platforms](#coding-tools-and-platforms)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-3)
   - [Continue](#continue)
   - [Qwen2.5](#qwen25)
   - [Claude 3.5 Sonnet](#claude-35-sonnet)
-- [Image Generation](#image-generation)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-3)
+- [Image Generation Tools and Platforms](#image-generation-tools-and-platforms)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-4)
   - [Fooocus](#fooocus)
   - [Generative AI for Krita](#generative-ai-for-krita)
   - [SD.Next](#sdnext)
   - [Stable Diffusion web UI](#stable-diffusion-web-ui)
   - [ComfyUI](#comfyui)
-- [Audio](#audio)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-4)
+- [Audio Tools and Platforms](#audio-tools-and-platforms)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-5)
   - [Whisper](#whisper)
       - [How to install and use Whisper offline (no internet required)](#how-to-install-and-use-whisper-offline-no-internet-required)
   - [local-talking-llm](#local-talking-llm)
   - [Music](#music)
     - [FluxMusic](#fluxmusic)
     - [OpenMusic](#openmusic)
-- [Video Generation](#video-generation)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-5)
+- [Video Generation Tools and Platforms](#video-generation-tools-and-platforms)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-6)
   - [Awesome Video Diffusion](#awesome-video-diffusion)
   - [CogVideo](#cogvideo)
   - [LTX-Video](#ltx-video)
-- [CAD Generation](#cad-generation)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-6)
+- [CAD Generation Tools and Platforms](#cad-generation-tools-and-platforms)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-7)
   - [Trellis](#trellis)
   - [Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts](#text2cad-generating-sequential-cad-designs-from-beginner-to-expert-level-text-prompts)
 
@@ -165,7 +165,7 @@ CC-BY-SA-4.0
 
 
 
-## Running LLMs Low End PCs
+## Text-Generation on Low End PCs
 
 
 Low-end Machine Tips:
@@ -357,18 +357,19 @@ https://www.redditmedia.com/r/StableDiffusion/comments/1hiee9l/anyone_running_st
 https://www.redditmedia.com/r/LocalLLaMA/comments/1fx9lo9/speech_to_text_on_laptop_without_api_calls/
 
 
-# Local Machine Learning Limitations
+## Additional Local Machine Learning Limitations
 
-
-
+- Bias and Fairness: The training data used to create a language model may inadvertently reflect biases present in the training set, leading to potentially discriminatory or inappropriate outputs in generated text.
+  - If a language model is trained on unfiltered or biased data, it may inadvertently generate hallucinations by incorporating misinformation into its outputs.
+- Hallucinations refer to incorrect or fantastical responses that a model generates instead of real, accurate information. These errors can arise for several reasons and pose significant challenges. 
+  - Understanding Hallucination in LLMs: Causes, Consequences, and Mitigation Strategies: https://medium.com/@gcentulani/understanding-hallucination-in-llms-causes-consequences-and-mitigation-strategies-b5e1d0268069
+  - Does Your Model Hallucinate? Tips and Tricks on How to Measure and Reduce Hallucinations in LLMs: https://deepsense.ai/blog/does-your-model-hallucinate-tips-and-tricks-on-how-to-measure-and-reduce-hallucinations-in-llms/
+  - To address these challenges related to hallucinations, researchers and developers are continuously working on improving model training methods, enhancing data quality, and developing techniques to detect and correct errors in generated content. 
 
 
 ---
 
-# Local Machine Learning Tools and Platforms
-
-
-## General Resources
+# Local Machine Learning General Resources
 
 LocalML Zotero Library: https://www.zotero.org/groups/5718368/localml/library
 
@@ -377,11 +378,11 @@ LocalML Zotero Library: https://www.zotero.org/groups/5718368/localml/library
 
 The platform where the machine learning community collaborates on models, datasets, and applications.
 
-https://huggingface.co/docs
+- https://huggingface.co/docs
 
-https://github.com/huggingface
+- https://github.com/huggingface
 
-https://github.com/huggingface/transformers
+- https://github.com/huggingface/transformers
 
 
 
@@ -389,32 +390,28 @@ https://github.com/huggingface/transformers
 
 ### Livebench
 
-https://livebench.ai/#/
+- https://livebench.ai/#/
 
 
 
 ## Models
 
 
-https://huggingface.co/models
+- https://huggingface.co/models
 
-https://github.com/Troyanovsky/Local-LLM-Comparison-Colab-UI
+- https://github.com/Troyanovsky/Local-LLM-Comparison-Colab-UI
 
-https://www.openml.org/
+- https://www.openml.org/
 
 
 ## Wiki Articles
-https://en.wikipedia.org/wiki/Generative_artificial_intelligence
 
-
+- https://en.wikipedia.org/wiki/Generative_artificial_intelligence
 
 ## Reddit Groups
-https://www.reddit.com/r/LocalLLaMA/
-
-https://www.reddit.com/r/MachineLearning/
-
-https://www.reddit.com/r/MLQuestions/
-
+- https://www.reddit.com/r/LocalLLaMA/
+- https://www.reddit.com/r/MachineLearning/
+- https://www.reddit.com/r/MLQuestions/
 
 ## GitHub Awesome Lists
 
@@ -446,9 +443,15 @@ https://github.com/f/awesome-chatgpt-prompts
 
 
 
-# Running LLM on Android Devices
+# Text Generation Tools and Platforms
 
-## MLC LLM
+## Why might this be useful for community networking and/or capacity building?
+
+
+
+## Running LLM on Android Devices
+
+### MLC LLM
 
 MLC LLM is a machine learning compiler and high-performance deployment engine for large language models. The mission of this project is to enable everyone to develop, optimize, and deploy AI models natively on everyone's platforms. 
 
@@ -467,7 +470,7 @@ https://beebom.com/how-run-llm-locally-mlc-chat-android-phones/
 
 
 
-## Maid - Mobile Artificial Intelligence Distribution
+### Maid - Mobile Artificial Intelligence Distribution
 
 Maid is a cross-platform free and an open-source application for interfacing with llama.cpp models locally, and remotely with Ollama, Mistral, Google Gemini and OpenAI models remotely. Maid supports sillytavern character cards to allow you to interact with all your favorite characters. Maid supports downloading a curated list of Models in-app directly from huggingface.
 
@@ -475,7 +478,7 @@ https://github.com/Mobile-Artificial-Intelligence/maid
 
 
 
-## ChatterUI
+### ChatterUI
 ChatterUI is a native mobile frontend for LLMs.
 
 Run LLMs on device or connect to various commercial or open source APIs. ChatterUI aims to provide a mobile-friendly interface with fine-grained control over chat structuring.
@@ -483,7 +486,7 @@ Run LLMs on device or connect to various commercial or open source APIs. Chatter
 https://github.com/Vali-98/ChatterUI
 
 
-## smolchat Android
+### smolchat Android
 
 Project Goals
 
@@ -496,7 +499,7 @@ Project Goals
 https://github.com/shubham0204/SmolChat-Android
 
 
-# Running LLM on Docker
+## Running LLM on Docker
 
 Discussion: https://www.reddit.com/r/LocalLLaMA/comments/17v5r0p/a_fun_day_evaluating_llm_chat_guisservers_in/
 
@@ -513,10 +516,6 @@ https://docs.openvino.ai/2024/index.html
 
 ## PrivateGPT
 https://github.com/zylon-ai/private-gpt
-
-
-
-# Text Generation Tools and Platforms
 
 
 
@@ -709,7 +708,7 @@ https://github.com/PromtEngineer/localGPT
 
 
 
-# Text - Translation
+# Text - Translation Tools and Platforms
 
 ## Why might this be useful for community networking and/or capacity building?
 
@@ -731,7 +730,7 @@ https://huggingface.co/lelapa/InkubaLM-0.4B
 
 
 
-# Text - RAG
+# Text - RAG Tools and Platforms
 
 ## Why might this be useful for community networking and/or capacity building?
 
@@ -771,7 +770,7 @@ https://github.com/shubham0204/Android-Document-QA
 
 
 
-# Code
+# Coding Tools and Platforms
 
 ## Why might this be useful for community networking and/or capacity building?
 
@@ -818,7 +817,7 @@ https://www.reddit.com/r/LocalLLaMA/comments/1h7nsg2/are_you_still_happy_with_qw
 https://www.anthropic.com/news/3-5-models-and-computer-use
 
 
-# Image Generation
+# Image Generation Tools and Platforms
 
 ## Why might this be useful for community networking and/or capacity building?
 
@@ -873,7 +872,7 @@ https://github.com/comfyanonymous/ComfyUI
 
 
 
-# Audio
+# Audio Tools and Platforms
 
 ## Why might this be useful for community networking and/or capacity building?
 
@@ -926,7 +925,7 @@ https://github.com/ivcylc/qa-mdt
 
 
 
-# Video Generation
+# Video Generation Tools and Platforms
 
 ## Why might this be useful for community networking and/or capacity building?
 
@@ -955,7 +954,7 @@ https://github.com/Lightricks/LTX-Video
 
 
 
-# CAD Generation
+# CAD Generation Tools and Platforms
 
 ## Why might this be useful for community networking and/or capacity building?
 
