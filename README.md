@@ -7,10 +7,6 @@ If your objective is machine learning/AI without internet, on a standard consume
 
 We will attempt to label any closed source tools as such.   
 
-The Main list of tools can be found here: https://github.com/Wakoma/LocalML/blob/main/resources/tools.md.
-
-Implementation considerations for local/offline ML can be found here: https://github.com/Wakoma/LocalML/blob/main/resources/considerations.md
-
 The shared Zotero Library for this project can be found here: https://www.zotero.org/groups/5718368/localml/library
 
 This research project is generously funded by [APC](https://www.apc.org/). 
@@ -36,7 +32,7 @@ CC-BY-SA-4.0
     - [RAG](#rag)
     - [Clippings](#clippings)
   - [Image Generation on Low-End PCs](#image-generation-on-low-end-pcs)
-  - [tl:dr](#tldr-1)
+    - [tl:dr](#tldr-1)
     - [Clippings](#clippings-1)
   - [Audio on Low-End PCs](#audio-on-low-end-pcs)
 - [Local Machine Learning Tools and Platforms](#local-machine-learning-tools-and-platforms)
@@ -87,6 +83,7 @@ CC-BY-SA-4.0
   - [Android-Document-QA](#android-document-qa)
 - [Code](#code)
   - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building)
+  - [Continue](#continue)
   - [Qwen2.5](#qwen25)
   - [Claude 3.5 Sonnet](#claude-35-sonnet)
 - [Image Generation](#image-generation)
@@ -312,16 +309,9 @@ https://www.reddit.com/r/LocalLLaMA/comments/16imcc0/recommend_a_local_llm_for_l
 
 
 
-
-----
-
-
-
 ## Image Generation on Low-End PCs
 
-
-
-## tl:dr
+### tl:dr
 
 - Image generation "tokens per second" isn't a standard metric like it is for text LLMs. Instead, image generation speed is measured in images generated per second or time taken to generate a single image.
 
@@ -336,7 +326,6 @@ https://www.reddit.com/r/LocalLLaMA/comments/16imcc0/recommend_a_local_llm_for_l
 - **Batch Processing**: If you need to generate multiple images, consider batch processing. This allows the GPU to work more efficiently.
 - **Software** https://github.com/rupeshs/fastsdcpu
   - More in tools.md in this repo.
-
 
 
 ### Clippings
@@ -365,11 +354,11 @@ They took me ~10-15 minutes per image (512x512 resolution) and ~8 GB RAM memory 
 https://www.redditmedia.com/r/StableDiffusion/comments/1hiee9l/anyone_running_stable_diffusion_without_gpu/
 
 
-----
 
 ## Audio on Low-End PCs
 
 https://www.redditmedia.com/r/LocalLLaMA/comments/1fx9lo9/speech_to_text_on_laptop_without_api_calls/
+
 
 
 ---
@@ -781,12 +770,24 @@ https://github.com/shubham0204/Android-Document-QA
 
 
 
+What's the current best way to use AI coding assistants in VSCode?:
+https://www.redditmedia.com/r/vscode/comments/1fpqzh9/whats_the_current_best_way_to_use_ai_coding/
+
+
+## Continue
+
+https://github.com/continuedev/continue
+
+" Continue is the leading open-source AI code assistant. You can connect any models and any context to build custom autocomplete and chat experiences inside VS Code and JetBrains".
+
 
 ## Qwen2.5
 
 Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. 
 
 https://huggingface.co/Qwen/Qwen2.5-72B-Instruct
+
+https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 
 https://github.com/QwenLM/Qwen2.5
 
@@ -797,6 +798,8 @@ https://ollama.com/library/qwen2.5-coder
 https://venturebeat.com/ai/alibaba-new-ai-can-code-in-92-languages-and-its-completely-free/
 
 https://www.reddit.com/r/LocalLLaMA/comments/1h7nsg2/are_you_still_happy_with_qwen25_coder_32b/
+
+
 
 ## Claude 3.5 Sonnet
 
