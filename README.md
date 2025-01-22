@@ -28,24 +28,23 @@ CC-BY-SA-4.0
   - [Resource requirements](#resource-requirements)
   - [Strategies for Mitigating Resource Requirements:](#strategies-for-mitigating-resource-requirements)
   - [Running LLMs Low End PCs](#running-llms-low-end-pcs)
-    - [tl:dr](#tldr)
-    - [RAG](#rag)
-    - [Clippings](#clippings)
+    - [Clippings related to text-generation on low-end PCs.](#clippings-related-to-text-generation-on-low-end-pcs)
   - [Image Generation on Low-End PCs](#image-generation-on-low-end-pcs)
-    - [tl:dr](#tldr-1)
-    - [Clippings](#clippings-1)
-  - [Audio on Low-End PCs](#audio-on-low-end-pcs)
+    - [Clippings related to image-generation on low-end PCs.](#clippings-related-to-image-generation-on-low-end-pcs)
+  - [Speech on Low-End PCs](#speech-on-low-end-pcs)
+- [Local Machine Learning Limitations](#local-machine-learning-limitations)
 - [Local Machine Learning Tools and Platforms](#local-machine-learning-tools-and-platforms)
   - [General Resources](#general-resources)
+    - [Hugging Face](#hugging-face)
   - [Leaderboards](#leaderboards)
     - [Livebench](#livebench)
   - [Models](#models)
   - [Wiki Articles](#wiki-articles)
-  - [Reddit Groups and Discussions](#reddit-groups-and-discussions)
-  - [Awesome Lists](#awesome-lists)
+  - [Reddit Groups](#reddit-groups)
+  - [GitHub Awesome Lists](#github-awesome-lists)
   - [Prompt Engineering](#prompt-engineering)
   - [AI research](#ai-research)
-- [Running LLM on Android](#running-llm-on-android)
+- [Running LLM on Android Devices](#running-llm-on-android-devices)
   - [MLC LLM](#mlc-llm)
   - [Maid - Mobile Artificial Intelligence Distribution](#maid---mobile-artificial-intelligence-distribution)
   - [ChatterUI](#chatterui)
@@ -55,45 +54,48 @@ CC-BY-SA-4.0
   - [Ollama](#ollama)
   - [OpenVINO](#openvino)
   - [PrivateGPT](#privategpt)
-- [Text Generation](#text-generation)
+- [Text Generation Tools and Platforms](#text-generation-tools-and-platforms)
+  - [Anything LLM](#anything-llm)
+  - [Ollama](#ollama-1)
+  - [GPT4All](#gpt4all)
+  - [koboldcpp](#koboldcpp)
+  - [vllm](#vllm)
+  - [AnythingLLM](#anythingllm)
+  - [jan](#jan)
+  - [Llama.cpp](#llamacpp)
   - [llamafile](#llamafile)
   - [smol-tools](#smol-tools)
   - [SmolLM2](#smollm2)
   - [smol-course](#smol-course)
-  - [Anything LLM](#anything-llm)
-  - [Ollama](#ollama-1)
-  - [GPT4All](#gpt4all)
-  - [Llama.cpp](#llamacpp)
   - [gpt4free](#gpt4free)
   - [private-gpt](#private-gpt)
   - [Open WebUI](#open-webui-1)
   - [Lobe Chat](#lobe-chat)
   - [Text generation web UI](#text-generation-web-ui)
-  - [vllm](#vllm)
-  - [AnythingLLM](#anythingllm)
-  - [jan](#jan)
   - [localGPT](#localgpt)
-  - [koboldcpp](#koboldcpp)
 - [Text - Translation](#text---translation)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building)
   - [InkubaLM](#inkubalm)
 - [Text - RAG](#text---rag)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-1)
   - [Sort](#sort)
   - [Datasets](#datasets)
   - [WikiChat](#wikichat)
   - [Android-Document-QA](#android-document-qa)
 - [Code](#code)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-2)
   - [Continue](#continue)
   - [Qwen2.5](#qwen25)
   - [Claude 3.5 Sonnet](#claude-35-sonnet)
 - [Image Generation](#image-generation)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-1)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-3)
   - [Fooocus](#fooocus)
   - [Generative AI for Krita](#generative-ai-for-krita)
   - [SD.Next](#sdnext)
   - [Stable Diffusion web UI](#stable-diffusion-web-ui)
   - [ComfyUI](#comfyui)
 - [Audio](#audio)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-4)
   - [Whisper](#whisper)
       - [How to install and use Whisper offline (no internet required)](#how-to-install-and-use-whisper-offline-no-internet-required)
   - [local-talking-llm](#local-talking-llm)
@@ -101,11 +103,12 @@ CC-BY-SA-4.0
     - [FluxMusic](#fluxmusic)
     - [OpenMusic](#openmusic)
 - [Video Generation](#video-generation)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-5)
   - [Awesome Video Diffusion](#awesome-video-diffusion)
   - [CogVideo](#cogvideo)
   - [LTX-Video](#ltx-video)
 - [CAD Generation](#cad-generation)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-2)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-6)
   - [Trellis](#trellis)
   - [Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts](#text2cad-generating-sequential-cad-designs-from-beginner-to-expert-level-text-prompts)
 
@@ -119,7 +122,7 @@ CC-BY-SA-4.0
 
 ##  Benefits of/Reasons for Doing Local/Offline ML
 
-- Resilience: Offline systems are less vulnerable to internet outages and disruptions, ensuring continued functionality in unpredictable environments.
+- Resilience: Offline machine learning tools are less vulnerable to internet outages and disruptions, ensuring continued functionality in unpredictable environments.
 - Data Privacy:  Processing data locally reduces reliance on cloud services, enhancing privacy and data security
 - Reduced costs: Eliminating the need for constant internet access and potential cloud computing fees can significantly reduce costs
 
@@ -164,16 +167,15 @@ CC-BY-SA-4.0
 
 ## Running LLMs Low End PCs
 
-### tl:dr
 
 Low-end Machine Tips:
 - TPS: or t/s, means Tokens per second. The higher the better. 1t/s is slow, and you'll be waiting for the output. 
   - Aim for more than 10 t/s if possible.
   - LLM tokens per second (TPS) measures how quickly a Large Language Model can process text, with each token representing a word or subword
   - You can use a larger model on low-end machine, but the speed at which the LLM spits out a response will be much slower.  This is still offline though. 
-- Software: If you don't know where to start, install GPT4ALL (https://gpt4all.io/index.html) or kobold.
+- Software: If you don't know where to start, install GPT4ALL (https://gpt4all.io/index.html) or kobold (https://github.com/LostRuins/koboldcpp).
 - Models: try a 7B or 8B model. If it's too slow for you, try a 3B model. 
-  - Look for models that offer quantized versions. Quantization reduces the precision of the model weights, making them smaller and faster to process.
+  - Look for models that offer quantized versions. Quantization reduces the precision of the model weights, making them smaller and faster to process. The model should say something like Q8 next to the name. 
 - Low/No VRAM: With little to no RAM, make sure your CPU fan is working well and does not let the processor overheat. Running LLMs  can be very demanding.
   - 8GB RAM? This will work, but you may want to save up some money to get more RAM. RAM is relatively cheap these days and getting 16GB would enable you to run models that are twice as big.  (https://www.reddit.com/r/LocalLLaMA/comments/14q5n5c/comment/jqm3cpm/)
 - Other tips:
@@ -190,13 +192,10 @@ When is internet access required?
 - Download the model
 - Connect for occasional updates (optional)
 
-### RAG
 
 
 
-
-
-### Clippings
+### Clippings related to text-generation on low-end PCs. 
 
 "You can run 13B models with 16 GB RAM but they will be slow because of CPU inference. I'd stick to 3B and 7B if you want speed. Models with more B's (more parameters) will usually be more accurate and more coherent when following instructions but they will be much slower." 
 
@@ -225,7 +224,6 @@ https://www.reddit.com/r/LocalLLaMA/comments/13wnuuo/whats_the_best_local_llm_fo
 "8gb ram with a quad core CPU for good 7B inference
 Thank you, I hate these entitled posts: "Is it my 16 core CPU with newest nvidia 24GB VRAM enough to run llm?"
 
-"If your talking absolute BARE minimum, I can give you a few tiers of minimums starting at lowest of low system requirements."
 
 "4GB RAM or 2GB GPU / You will be able to run only 3B models at 4-bit, but don't expect great performance from them as they need a lot of steering to get anything really meaningful out of them. Even most phones can run these models using something like MLC."
 
@@ -311,7 +309,6 @@ https://www.reddit.com/r/LocalLLaMA/comments/16imcc0/recommend_a_local_llm_for_l
 
 ## Image Generation on Low-End PCs
 
-### tl:dr
 
 - Image generation "tokens per second" isn't a standard metric like it is for text LLMs. Instead, image generation speed is measured in images generated per second or time taken to generate a single image.
 
@@ -328,7 +325,7 @@ https://www.reddit.com/r/LocalLLaMA/comments/16imcc0/recommend_a_local_llm_for_l
   - More in tools.md in this repo.
 
 
-### Clippings
+### Clippings related to image-generation on low-end PCs. 
 
 You can run A1111 all on CPU if you add all these command line arguments to the webuser-ui.bat : --use-cpu all --precision full --no-half --skip-torch-cuda-test
 
@@ -345,19 +342,24 @@ https://www.reddit.com/r/StableDiffusion/comments/17bzn30/running_sd_locally_wit
 https://www.reddit.com/r/StableDiffusion/comments/108hsd3/can_i_run_sd_without_a_dedicated_gpu/
 
 
-I wanted to try running it on my CPU only setup without GPU to see if there's anyway that I can run without GPU but still made it so I would love to learn from your tips
+"I wanted to try running it on my CPU only setup without GPU to see if there's anyway that I can run without GPU but still made it so I would love to learn from your tips
 
 My setups includes:
 ▸ Quad-core CPU (Intel Core i7-1165G7)
 ▸ 64 GB RAM
-They took me ~10-15 minutes per image (512x512 resolution) and ~8 GB RAM memory usage.
+They took me ~10-15 minutes per image (512x512 resolution) and ~8 GB RAM memory usage."
 https://www.redditmedia.com/r/StableDiffusion/comments/1hiee9l/anyone_running_stable_diffusion_without_gpu/
 
 
 
-## Audio on Low-End PCs
+## Speech on Low-End PCs
 
 https://www.redditmedia.com/r/LocalLLaMA/comments/1fx9lo9/speech_to_text_on_laptop_without_api_calls/
+
+
+# Local Machine Learning Limitations
+
+
 
 
 
@@ -370,11 +372,18 @@ https://www.redditmedia.com/r/LocalLLaMA/comments/1fx9lo9/speech_to_text_on_lapt
 
 LocalML Zotero Library: https://www.zotero.org/groups/5718368/localml/library
 
+
+### Hugging Face 
+
+The platform where the machine learning community collaborates on models, datasets, and applications.
+
 https://huggingface.co/docs
 
 https://github.com/huggingface
 
 https://github.com/huggingface/transformers
+
+
 
 ## Leaderboards
 
@@ -397,7 +406,9 @@ https://www.openml.org/
 ## Wiki Articles
 https://en.wikipedia.org/wiki/Generative_artificial_intelligence
 
-## Reddit Groups and Discussions
+
+
+## Reddit Groups
 https://www.reddit.com/r/LocalLLaMA/
 
 https://www.reddit.com/r/MachineLearning/
@@ -405,9 +416,7 @@ https://www.reddit.com/r/MachineLearning/
 https://www.reddit.com/r/MLQuestions/
 
 
-Can a 3b model with sufficiently high quality training data outperform a 70b models at specialized tasks?  https://www.reddit.com/r/LocalLLaMA/comments/1h9c6cu/can_a_3b_model_with_sufficiently_high_quality/
-
-## Awesome Lists
+## GitHub Awesome Lists
 
 https://github.com/janhq/awesome-local-ai
 
@@ -417,8 +426,8 @@ https://github.com/mahseema/awesome-ai-tools
 
 https://github.com/steven2358/awesome-generative-ai
 
-## Prompt Engineering
 
+## Prompt Engineering
 
 https://www.promptingguide.ai/
 
@@ -429,7 +438,7 @@ https://github.com/f/awesome-chatgpt-prompts
 
  ## AI research 
 
-https://github.com/youssefHosni/Awesome-AI-Data-GitHub-Repos
+ https://github.com/youssefHosni/Awesome-AI-Data-GitHub-Repos
 
  https://github.com/aimerou/awesome-ai-papers
 
@@ -437,7 +446,7 @@ https://github.com/youssefHosni/Awesome-AI-Data-GitHub-Repos
 
 
 
-# Running LLM on Android
+# Running LLM on Android Devices
 
 ## MLC LLM
 
@@ -507,18 +516,106 @@ https://github.com/zylon-ai/private-gpt
 
 
 
-# Text Generation
+# Text Generation Tools and Platforms
 
 
+
+## Anything LLM
+https://github.com/Mintplex-Labs/anything-llm
+
+
+
+## Ollama
+
+ollama.com
+
+https://github.com/ollama/ollama
+
+Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models. 
+
+
+Run LLMs locally without internet with Ollama
+https://medium.com/@pratikgtm/run-llms-locally-without-internet-with-ollama-1305ee83ceb7
+
+
+## GPT4All
+
+nomic.ai/gpt4all
+
+https://github.com/nomic-ai/gpt4all
+
+ GPT4All runs large language models (LLMs) privately on everyday desktops & laptops.
+
+No API calls or GPUs required - you can just download the application and get started. 
+
+
+## koboldcpp
+
+KoboldCpp is an easy-to-use AI text-generation software for GGML and GGUF models, inspired by the original KoboldAI. It's a single self-contained distributable from Concedo, that builds off llama.cpp, and adds a versatile KoboldAI API endpoint, additional format support, Stable Diffusion image generation, speech-to-text, backward compatibility, as well as a fancy UI with persistent stories, editing tools, save formats, memory, world info, author's note, characters, scenarios and everything KoboldAI and KoboldAI Lite have to offer.
+
+
+https://github.com/LostRuins/koboldcpp
+
+
+## vllm
+
+vLLM is a fast and easy-to-use library for LLM inference and serving.
+
+vLLM is fast with:
+
+    State-of-the-art serving throughput
+    Efficient management of attention key and value memory with PagedAttention
+    Continuous batching of incoming requests
+    Fast model execution with CUDA/HIP graph
+    Quantizations: GPTQ, AWQ, INT4, INT8, and FP8.
+    Optimized CUDA kernels, including integration with FlashAttention and FlashInfer.
+    Speculative decoding
+    Chunked prefill
+
+https://github.com/vllm-project/vllm
+
+
+## AnythingLLM
+
+AnythingLLM: The all-in-one AI app you were looking for.
+Chat with your docs, use AI Agents, hyper-configurable, multi-user, & no frustrating set up required. 
+
+https://github.com/Mintplex-Labs/anything-llm
+
+anythingllm.com
+
+
+## jan
+
+Jan is an open source alternative to ChatGPT that runs 100% offline on your computer. Multiple engine support (llama.cpp, TensorRT-LLM) 
+
+https://github.com/janhq/jan
+
+jan.ai/
+
+## Llama.cpp
+
+https://github.com/ggerganov/llama.cpp
+
+Inference of Meta's LLaMA model (and others) in pure C/C++
+
+The main goal of llama.cpp is to enable LLM inference with minimal setup and state-of-the-art performance on a wide variety of hardware - locally and in the cloud.
+
+    Plain C/C++ implementation without any dependencies
+    Apple silicon is a first-class citizen - optimized via ARM NEON, Accelerate and Metal frameworks
+    AVX, AVX2, AVX512 and AMX support for x86 architectures
+    1.5-bit, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, and 8-bit integer quantization for faster inference and reduced memory use
+    Custom CUDA kernels for running LLMs on NVIDIA GPUs (support for AMD GPUs via HIP and Moore Threads MTT GPUs via MUSA)
+    Vulkan and SYCL backend support
+    CPU+GPU hybrid inference to partially accelerate models larger than the total VRAM capacity
+
+Since its inception, the project has improved significantly thanks to many contributions. It is the main playground for developing new features for the ggml library.
 
 ## llamafile
 
 llamafile lets you distribute and run LLMs with a single file. 
 
 https://github.com/Mozilla-Ocho/llamafile
-
-
-
 
 
 
@@ -555,56 +652,6 @@ While large language models have shown impressive capabilities, they often requi
     Green Technology: Advocates efficient usage of resources with reduced carbon footprint
     Easier Academic Research Development: Provides an easy starter for academic research with cutting-edge LLMs with less logistical constraints
 
-
-
-
-## Anything LLM
-https://github.com/Mintplex-Labs/anything-llm
-
-
-
-## Ollama
-
-ollama.com
-
-https://github.com/ollama/ollama
-
-Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models. 
-
-
-Run LLMs locally without internet with Ollama
-https://medium.com/@pratikgtm/run-llms-locally-without-internet-with-ollama-1305ee83ceb7
-
-
-## GPT4All
-
-nomic.ai/gpt4all
-
-https://github.com/nomic-ai/gpt4all
-
- GPT4All runs large language models (LLMs) privately on everyday desktops & laptops.
-
-No API calls or GPUs required - you can just download the application and get started. 
-
-
-
-## Llama.cpp
-
-https://github.com/ggerganov/llama.cpp
-
-Inference of Meta's LLaMA model (and others) in pure C/C++
-
-The main goal of llama.cpp is to enable LLM inference with minimal setup and state-of-the-art performance on a wide variety of hardware - locally and in the cloud.
-
-    Plain C/C++ implementation without any dependencies
-    Apple silicon is a first-class citizen - optimized via ARM NEON, Accelerate and Metal frameworks
-    AVX, AVX2, AVX512 and AMX support for x86 architectures
-    1.5-bit, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, and 8-bit integer quantization for faster inference and reduced memory use
-    Custom CUDA kernels for running LLMs on NVIDIA GPUs (support for AMD GPUs via HIP and Moore Threads MTT GPUs via MUSA)
-    Vulkan and SYCL backend support
-    CPU+GPU hybrid inference to partially accelerate models larger than the total VRAM capacity
-
-Since its inception, the project has improved significantly thanks to many contributions. It is the main playground for developing new features for the ggml library.
 
 
 ## gpt4free
@@ -652,41 +699,6 @@ Its goal is to become the AUTOMATIC1111/stable-diffusion-webui of text generatio
 https://github.com/oobabooga/text-generation-webui
 
 
-## vllm
-
-vLLM is a fast and easy-to-use library for LLM inference and serving.
-
-vLLM is fast with:
-
-    State-of-the-art serving throughput
-    Efficient management of attention key and value memory with PagedAttention
-    Continuous batching of incoming requests
-    Fast model execution with CUDA/HIP graph
-    Quantizations: GPTQ, AWQ, INT4, INT8, and FP8.
-    Optimized CUDA kernels, including integration with FlashAttention and FlashInfer.
-    Speculative decoding
-    Chunked prefill
-
-https://github.com/vllm-project/vllm
-
-
-## AnythingLLM
-
-AnythingLLM: The all-in-one AI app you were looking for.
-Chat with your docs, use AI Agents, hyper-configurable, multi-user, & no frustrating set up required. 
-
-https://github.com/Mintplex-Labs/anything-llm
-
-anythingllm.com
-
-
-## jan
-
-Jan is an open source alternative to ChatGPT that runs 100% offline on your computer. Multiple engine support (llama.cpp, TensorRT-LLM) 
-
-https://github.com/janhq/jan
-
-jan.ai/
 
 ## localGPT
 
@@ -695,17 +707,11 @@ LocalGPT is an open-source initiative that allows you to converse with your docu
 https://github.com/PromtEngineer/localGPT
 
 
-## koboldcpp
-
-KoboldCpp is an easy-to-use AI text-generation software for GGML and GGUF models, inspired by the original KoboldAI. It's a single self-contained distributable from Concedo, that builds off llama.cpp, and adds a versatile KoboldAI API endpoint, additional format support, Stable Diffusion image generation, speech-to-text, backward compatibility, as well as a fancy UI with persistent stories, editing tools, save formats, memory, world info, author's note, characters, scenarios and everything KoboldAI and KoboldAI Lite have to offer.
-
-
-https://github.com/LostRuins/koboldcpp
-
-
 
 
 # Text - Translation
+
+## Why might this be useful for community networking and/or capacity building?
 
 
 ## InkubaLM
@@ -727,6 +733,10 @@ https://huggingface.co/lelapa/InkubaLM-0.4B
 
 # Text - RAG
 
+## Why might this be useful for community networking and/or capacity building?
+
+
+
 ## Sort
 
 https://medium.com/@nydas/building-an-offline-rag-chatbot-with-custom-frontend-and-websockets-3a739878adf1
@@ -741,6 +751,7 @@ https://github.com/jonfairbanks/local-rag
 https://www.reddit.com/r/LocalLLaMA/comments/1bjlzna/whats_the_fastest_route_to_success_to_performing/
 
 https://huggingface.co/datasets/legacy-datasets/wikipedia
+
 
 ## WikiChat
 
@@ -778,7 +789,7 @@ https://www.redditmedia.com/r/vscode/comments/1fpqzh9/whats_the_current_best_way
 
 https://github.com/continuedev/continue
 
-" Continue is the leading open-source AI code assistant. You can connect any models and any context to build custom autocomplete and chat experiences inside VS Code and JetBrains".
+"Continue is the leading open-source AI code assistant. You can connect any models and any context to build custom autocomplete and chat experiences inside VS Code and JetBrains".
 
 
 ## Qwen2.5
@@ -794,6 +805,7 @@ https://github.com/QwenLM/Qwen2.5
 https://arxiv.org/pdf/2409.12186
 
 https://ollama.com/library/qwen2.5-coder
+
 
 https://venturebeat.com/ai/alibaba-new-ai-can-code-in-92-languages-and-its-completely-free/
 
@@ -863,6 +875,10 @@ https://github.com/comfyanonymous/ComfyUI
 
 # Audio
 
+## Why might this be useful for community networking and/or capacity building?
+
+
+
 
 ## Whisper
 
@@ -885,13 +901,11 @@ https://github.com/Purfview/whisper-standalone-win
 
 
 
-
 ## local-talking-llm
 
 After my latest post about how to build your own RAG and run it locally. Today, we're taking it a step further by not only implementing the conversational abilities of large language models but also adding listening and speaking capabilities. The idea is straightforward: we are going to create a voice assistant reminiscent of Jarvis or Friday from the iconic Iron Man movies, which can operate offline on your computer. Since this is an introductory tutorial, I will implement it in Python and keep it simple enough for beginners. Lastly, I will provide some guidance on how to scale the application. 
 
 https://github.com/vndee/local-talking-llm
-
 
 
 
@@ -913,6 +927,9 @@ https://github.com/ivcylc/qa-mdt
 
 
 # Video Generation
+
+## Why might this be useful for community networking and/or capacity building?
+
 
 
 ## Awesome Video Diffusion
@@ -942,11 +959,11 @@ https://github.com/Lightricks/LTX-Video
 
 ## Why might this be useful for community networking and/or capacity building?
 
-Users without technical expertise in 3D printing/additive manufacturing would be able to type in a prompt or use a reference image to generate a 3D model which could be printed/built locally. For example one could type the dimensions of a mount or bracket, or hardware case, to produce a CAD model for local production.
+- Users without technical expertise in 3D printing/additive manufacturing would be able to type in a prompt or use a reference image to generate a 3D model which could be printed/built locally. For example one could type the dimensions of a mount or bracket, or hardware case, to produce a CAD model for local production.
 
-Individuals without specialized training can leverage these tools to create customized designs for 3D printing, potentially leading to local production of connectivity-related tools, educational models, and more. This fosters self-reliance and innovation at a grassroots level.
+- Individuals without specialized training can leverage these tools to create customized designs for 3D printing, potentially leading to local production of connectivity-related tools, educational models, and more. This fosters self-reliance and innovation at a grassroots level.
 
-On-demand repairs facilitated by AI-generated instructions.
+- On-demand repairs facilitated by AI-generated instructions.
 
 
 ## Trellis
