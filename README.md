@@ -592,6 +592,7 @@ ollama.com
 
 Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models. 
 
+Library of Models that can be downloaded directly through Ollama: https://ollama.com/library
 
 Run LLMs locally without internet with Ollama
 - https://medium.com/@pratikgtm/run-llms-locally-without-internet-with-ollama-1305ee83ceb7
