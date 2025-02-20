@@ -4,7 +4,7 @@ Local/Offline AI Resources
 
 This repo is intended to be catalog of local, offline, and open-source AI (including machine learning and generative AI) tools and approaches, for enhancing community-centered connectivity and education, particularly in underconnected regions and low-resource contexts.
 
-If your objective is to harness AI without reliable or afforadble internet, on a standard consumer laptop or desktop PC, or phone, there should be useful resources for you in this repository.
+If your objective is to harness AI without reliable or affordable internet, on a standard consumer laptop or desktop PC, or phone, there should be useful resources for you in this repository.
 
 We will attempt to label any closed source tools as such.   
 
@@ -15,6 +15,9 @@ This research project is generously funded by [APC](https://www.apc.org/).
 Contributions/issues/PRs are very welcome.
 
 CC-BY-SA-4.0
+
+
+
 
 
 ---
@@ -40,6 +43,7 @@ CC-BY-SA-4.0
 - [Local AI/ML General Resources](#local-aiml-general-resources)
   - [Zotero Library](#zotero-library)
   - [Hugging Face](#hugging-face)
+  - [Can my computer run this?](#can-my-computer-run-this)
   - [Leaderboards](#leaderboards)
   - [Models](#models)
   - [Wiki Articles](#wiki-articles)
@@ -121,6 +125,7 @@ CC-BY-SA-4.0
   - [Trellis](#trellis)
   - [Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts](#text2cad-generating-sequential-cad-designs-from-beginner-to-expert-level-text-prompts)
 - [tinyML](#tinyml)
+- [Disclaimer](#disclaimer)
 
 
 
@@ -423,7 +428,6 @@ https://www.howtogeek.com/435644/how-to-see-how-much-ram-is-in-your-pc-and-its-s
     https://www.redditmedia.com/r/StableDiffusion/comments/1hiee9l/anyone_running_stable_diffusion_without_gpu/
 
 
-
 ---
 
 # Local AI/ML General Resources
@@ -449,6 +453,11 @@ The platform where the AI/machine learning community collaborates on models, dat
 - [Hugging Face Documentation](https://huggingface.co/docs)
 - [Hugging Face GitHub Repository](https://github.com/huggingface)
 - [Transformers](https://github.com/huggingface/transformers)
+
+## Can my computer run this?
+
+https://www.canirunthisllm.net/
+
 
 ## Leaderboards
 
@@ -1145,3 +1154,13 @@ The concept of tinyML aims to bring ML capabilities closer to the data source, r
 
 
 
+
+# Disclaimer
+
+The resources and tools listed in this repository are provided for informational purposes only. The authors and contributors do not make any warranties, express or implied, regarding the accuracy, completeness, reliability, suitability, availability, or fitness for a particular purpose of these resources and tools.
+
+Users are advised to exercise caution when using any specific tool or approach listed here. We do not recommend or endorse the use of any particular tools without conducting their own research and due diligence. Users should thoroughly understand the capabilities and limitations of each tool before implementing it in their projects or applications.
+
+Additionally, users must ensure that they comply with all local laws and regulations when using these resources and tools. This includes but is not limited to data protection laws, intellectual property rights, and any other legal requirements that may apply in your jurisdiction.
+
+By accessing and using this repository, you acknowledge that you are solely responsible for your own actions and the consequences resulting from their use of the provided information and resources.
