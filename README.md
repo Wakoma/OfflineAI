@@ -17,7 +17,6 @@ Contributions/issues/PRs are very welcome.
 CC-BY-SA-4.0
 
 
-
 ---
 
 # Table of Contents
@@ -25,21 +24,23 @@ CC-BY-SA-4.0
 - [LocalAI Introduction](#localai-introduction)
 - [Table of Contents](#table-of-contents)
 - [Local AI/ML Considerations](#local-aiml-considerations)
-  - [Benefits of/Reasons for Doing Local/Offline AI/ML](#benefits-ofreasons-for-doing-localoffline-aiml)
-  - [Challenges of Local/Offline AI/ML](#challenges-of-localoffline-aiml)
-  - [Resource requirements](#resource-requirements)
+  - [What is "local" AI?](#what-is-local-ai)
+  - [How does AI differ from machine learning, generative AI, LLMs, etc.?](#how-does-ai-differ-from-machine-learning-generative-ai-llms-etc)
+  - [What are the benefits of local AI?](#what-are-the-benefits-of-local-ai)
+  - [What are the challenges of local AI?](#what-are-the-challenges-of-local-ai)
+  - [What are the resource requirements for local AI?](#what-are-the-resource-requirements-for-local-ai)
   - [Strategies for Mitigating Resource Requirements:](#strategies-for-mitigating-resource-requirements)
   - [Text-Generation on Low End PCs](#text-generation-on-low-end-pcs)
-    - [Clippings related to text-generation on low-end PCs.](#clippings-related-to-text-generation-on-low-end-pcs)
+  - [When is internet access required for Local AI?](#when-is-internet-access-required-for-local-ai)
+    - [Clippings/Quotes related to text-generation on low-end PCs.](#clippingsquotes-related-to-text-generation-on-low-end-pcs)
   - [Image Generation on Low-End PCs](#image-generation-on-low-end-pcs)
-    - [Clippings related to image-generation on low-end PCs.](#clippings-related-to-image-generation-on-low-end-pcs)
-  - [Speech on Low-End PCs](#speech-on-low-end-pcs)
-  - [Additional Local AI/ML Limitations](#additional-local-aiml-limitations)
+    - [Why is image generation more resource intensive than doing text generation?](#why-is-image-generation-more-resource-intensive-than-doing-text-generation)
+    - [Tips for Image Generation on Low-End PCs](#tips-for-image-generation-on-low-end-pcs)
+    - [Clippings/Quotes related to image-generation on low-end PCs.](#clippingsquotes-related-to-image-generation-on-low-end-pcs)
 - [Local AI/ML General Resources](#local-aiml-general-resources)
   - [Zotero Library](#zotero-library)
   - [Hugging Face](#hugging-face)
   - [Leaderboards](#leaderboards)
-    - [Livebench](#livebench)
   - [Models](#models)
   - [Wiki Articles](#wiki-articles)
   - [Reddit Groups](#reddit-groups)
@@ -47,19 +48,15 @@ CC-BY-SA-4.0
   - [Prompt Engineering](#prompt-engineering)
   - [AI Research](#ai-research)
 - [Text Generation Tools and Platforms](#text-generation-tools-and-platforms)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building)
+  - [Why might text generation be useful for community networking and/or capacity building?](#why-might-text-generation-be-useful-for-community-networking-andor-capacity-building)
+    - [Education and Training](#education-and-training)
+    - [Additional Considerations](#additional-considerations)
   - [Running LLM on Android Devices](#running-llm-on-android-devices)
     - [MLC LLM](#mlc-llm)
     - [Maid - Mobile Artificial Intelligence Distribution](#maid---mobile-artificial-intelligence-distribution)
     - [ChatterUI](#chatterui)
     - [smolchat Android](#smolchat-android)
-  - [Running LLM on Docker](#running-llm-on-docker)
-  - [Open WebUI](#open-webui)
   - [Ollama](#ollama)
-  - [OpenVINO](#openvino)
-  - [PrivateGPT](#privategpt)
-  - [Anything LLM](#anything-llm)
-  - [Ollama](#ollama-1)
   - [GPT4All](#gpt4all)
   - [koboldcpp](#koboldcpp)
   - [vllm](#vllm)
@@ -70,35 +67,43 @@ CC-BY-SA-4.0
   - [smol-tools](#smol-tools)
   - [SmolLM2](#smollm2)
   - [smol-course](#smol-course)
+  - [OpenVINO](#openvino)
+  - [PrivateGPT](#privategpt)
+  - [Anything LLM](#anything-llm)
   - [gpt4free](#gpt4free)
   - [private-gpt](#private-gpt)
-  - [Open WebUI](#open-webui-1)
+  - [Open WebUI](#open-webui)
   - [Lobe Chat](#lobe-chat)
   - [Text generation web UI](#text-generation-web-ui)
   - [localGPT](#localgpt)
 - [Text - Translation Tools and Platforms](#text---translation-tools-and-platforms)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-1)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building)
+  - [Opus](#opus)
   - [InkubaLM](#inkubalm)
+  - [Aya](#aya)
+  - [Other](#other)
 - [Text - RAG Tools and Platforms](#text---rag-tools-and-platforms)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-2)
-  - [Sort](#sort)
+  - [What is RAG?](#what-is-rag)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-1)
+  - [RAG Tools](#rag-tools)
   - [Datasets](#datasets)
   - [WikiChat](#wikichat)
   - [Android-Document-QA](#android-document-qa)
 - [Coding Tools and Platforms](#coding-tools-and-platforms)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-3)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-2)
   - [Continue](#continue)
   - [Qwen2.5](#qwen25)
   - [Claude 3.5 Sonnet](#claude-35-sonnet)
 - [Image Generation Tools and Platforms](#image-generation-tools-and-platforms)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-4)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-3)
   - [Fooocus](#fooocus)
   - [Generative AI for Krita](#generative-ai-for-krita)
   - [SD.Next](#sdnext)
   - [Stable Diffusion web UI](#stable-diffusion-web-ui)
   - [ComfyUI](#comfyui)
 - [Audio Tools and Platforms](#audio-tools-and-platforms)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-5)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-4)
+  - [Speech on Low-End PCs](#speech-on-low-end-pcs)
   - [Whisper](#whisper)
       - [How to install and use Whisper offline (no internet required)](#how-to-install-and-use-whisper-offline-no-internet-required)
   - [local-talking-llm](#local-talking-llm)
@@ -106,12 +111,12 @@ CC-BY-SA-4.0
     - [FluxMusic](#fluxmusic)
     - [OpenMusic](#openmusic)
 - [Video Generation Tools and Platforms](#video-generation-tools-and-platforms)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-6)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-5)
   - [Awesome Video Diffusion](#awesome-video-diffusion)
   - [CogVideo](#cogvideo)
   - [LTX-Video](#ltx-video)
 - [CAD Generation Tools and Platforms](#cad-generation-tools-and-platforms)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-7)
+  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-6)
   - [Trellis](#trellis)
   - [Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts](#text2cad-generating-sequential-cad-designs-from-beginner-to-expert-level-text-prompts)
 - [tinyML](#tinyml)
@@ -124,22 +129,51 @@ CC-BY-SA-4.0
 
 
 
-##  Benefits of/Reasons for Doing Local/Offline AI/ML
+##  What is "local" AI?
 
-- Resilience: Offline machine learning tools are less vulnerable to internet outages and disruptions, ensuring continued functionality in unpredictable environments.
-- Data Privacy:  Processing data locally reduces reliance on cloud services, enhancing privacy and data security
-- Reduced costs: Eliminating the need for constant internet access and potential cloud computing fees can significantly reduce costs
+AI that runs locally or offline refers to AI (artificial intelligence) technologies and models that are run on a device within your control, without relying on external cloud services or internet connectivity. Instead of using (and sending your data to) services such as ChatGPT, you can use open source software and models completely offline on your own computer.
+
+## How does AI differ from machine learning, generative AI, LLMs, etc.?
+
+- **AI** (artificial intelligence) is a broad field that aims to simulate human intelligence and behavior. Under its umbrella are **machine learning**, **deep learning**, and **generative AI**. All three concepts share a common foundation: learning from data.
+- **Machine learning** is a subset of AI that involves training algorithms to recognize patterns and make predictions based on data.
+- **Deep learning** is a specialized type of machine learning that utilizes **neural networks**, inspired by the structure of the human brain. These networks can process complex patterns and learn from large datasets.
+- **Generative AI** is a branch of AI that can create new content, such as text, images, or audio, by learning from existing data.
+- **Large Language Models (LLMs)**, like GPT, are a subset of generative AI specifically designed to generate text.
+- LLMs use **transformer architectures** to analyze and understand vast amounts of text data. This enables them to generate human-quality text, even for tasks they haven’t been explicitly trained on (known as **zero-shot learning**).
 
 
-## Challenges of Local/Offline AI/ML
 
-- Computational Resources:  Running complex machine learning models requires significant computational power. Devices in resource-limited settings may lack the necessary processing power and memory.
+## What are the benefits of local AI?
+
+- On-Device Processing: The computations required for AI tasks are performed directly on the user's computer, smartphone, tablet, or other connected devices.
+- No Internet Dependency: Unlike cloud-based AI services, which require an active internet connection to send data to servers and receive results, local AI processes everything within the device's own storage and processing power.
+- Privacy and Security: Local AI enhances user privacy because sensitive data never leaves the device. It also provides enhanced security since it reduces the risk of data breaches through external networks.
+- Resource Efficiency: While cloud-based AI can be powerful, it often requires significant computational resources from remote servers. Local AI can leverage the processing power and storage capabilities of devices like smartphones or desktops to handle tasks efficiently.
+- Reliability in Unreliable Networks: In areas with poor internet connectivity or inconsistent service, local AI ensures that users can still perform AI-related tasks without interruption.
+- Cost-Effective: For organizations with limited budgets for cloud services, local AI can be a cost-effective alternative that leverages existing hardware resources.
+
+
+
+## What are the challenges of local AI?
+
+- Computational Resources:  Running complex AI models requires significant computational power. Devices in resource-limited settings may lack the necessary processing power and memory.
 - Model Size: Large pre-trained models can be difficult to deploy on devices with limited storage capacity. Techniques like model compression and quantization are crucial but come with trade-offs in accuracy
 - Data Acquisition and Preprocessing: Obtaining and preparing relevant data for training and deploying models offline can be challenging without reliable internet access for data collection and cleaning.
 - Model Maintenance and Updates: Keeping models up-to-date with new data and improvements can be difficult without regular internet connectivity.
 
 
-## Resource requirements
+- Bias and Fairness: The training data used to create a language model may inadvertently reflect biases present in the training set, leading to potentially discriminatory or inappropriate outputs in generated text.
+- If a language model is trained on unfiltered or biased data, it may inadvertently generate hallucinations by incorporating misinformation into its outputs.
+- Hallucinations refer to incorrect or fantastical responses that a model generates instead of real, accurate information. These errors can arise for several reasons and pose significant challenges. 
+- Understanding Hallucination in LLMs: Causes, Consequences, and Mitigation Strategies: https://medium.com/@gcentulani/understanding-hallucination-in-llms-causes-consequences-and-mitigation-strategies-b5e1d0268069
+- Does Your Model Hallucinate? Tips and Tricks on How to Measure and Reduce Hallucinations in LLMs: https://deepsense.ai/blog/does-your-model-hallucinate-tips-and-tricks-on-how-to-measure-and-reduce-hallucinations-in-llms/
+- To address these challenges related to hallucinations, researchers and developers are continuously working on improving model training methods, enhancing data quality, and developing techniques to detect and correct errors in generated content. 
+
+
+
+
+## What are the resource requirements for local AI?
 
 1. Computational Power (CPU/GPU)
 
@@ -164,7 +198,7 @@ CC-BY-SA-4.0
 
 - Model Compression: Techniques like pruning and quantization can reduce model size and computational demands without sacrificing too much accuracy.
 - Optimization for Specific Tasks: Fine-tuning pre-trained models for specific tasks can reduce the need for massive models and lower resource requirements.
-- Run the ML tool on one or more PCs and enable other machines on the network to access it/them. In this scenario, laptops and mobile devices without a powerful GPU or CPU can use ML tools via a simple user interface, with a noisy/power-hungry machine placed elsewhere in the networkm, ideally with power backup. Resources on this here: https://github.com/Wakoma/LocalML/blob/main/resources/tools.md#running-llm-on-docker
+- Run the ML tool on one or more PCs and enable other machines on the network to access it/them. In this scenario, laptops and mobile devices without a powerful GPU or CPU can use ML tools via a simple user interface, with a noisy/power-hungry machine placed elsewhere in the network, ideally with power backup. Resources on this here: https://github.com/Wakoma/LocalML/blob/main/resources/tools.md#running-llm-on-docker
 
 
 
@@ -173,10 +207,10 @@ CC-BY-SA-4.0
 
 
 Low-end Machine Tips:
-- TPS: or t/s, means Tokens per second. The higher the better. 1t/s is slow, and you'll be waiting for the output. 
+- TPS: or t/s, means Tokens (words) per second. The higher the better. 1t/s is slow, and you'll be waiting for the output. 
   - Aim for more than 10 t/s if possible.
   - LLM tokens per second (TPS) measures how quickly a Large Language Model can process text, with each token representing a word or subword
-  - You can use a larger model on low-end machine, but the speed at which the LLM spits out a response will be much slower.  This is still offline though. 
+  - You can use a larger model on low-end machine, but the speed at which the LLM outputs a response will be much slower.  This is still offline though. 
 - Software: If you don't know where to start, install GPT4ALL (https://gpt4all.io/index.html) or kobold (https://github.com/LostRuins/koboldcpp).
 - Models: try a 7B or 8B model. If it's too slow for you, try a 3B model. 
   - Look for models that offer quantized versions. Quantization reduces the precision of the model weights, making them smaller and faster to process. The model should say something like Q8 next to the name. 
@@ -191,184 +225,202 @@ How to check how much RAM you have:
 https://www.howtogeek.com/435644/how-to-see-how-much-ram-is-in-your-pc-and-its-speed/
 
 
-When is internet access required?
-- Download the app/service/client
-- Download the model
-- Connect for occasional updates (optional)
+## When is internet access required for Local AI?
+
+- To Download the app/service/client
+- To Download the model
+- To connect for occasional updates (optional)
+- After this, everything can be done offline/locally.
 
 
 
 
-### Clippings related to text-generation on low-end PCs. 
+### Clippings/Quotes related to text-generation on low-end PCs. 
 
-"You can run 13B models with 16 GB RAM but they will be slow because of CPU inference. I'd stick to 3B and 7B if you want speed. Models with more B's (more parameters) will usually be more accurate and more coherent when following instructions but they will be much slower." 
+    "You can run 13B models with 16 GB RAM but they will be slow because of CPU inference. I'd stick to 3B and 7B if you want speed. Models with more B's (more parameters) will usually be more accurate and more coherent when following instructions but they will be much slower." 
 
-"If you can get 32/64 GB of RAM what would be the best."
+    "If you can get 32/64 GB of RAM what would be the best."
 
-"On the PC side, get any laptop with a mobile Nvidia 3xxx or 4xxx GPU, with the most GPU VRAM that you can afford. You don't want to run CPU inference on regular system RAM because it will be a lot slower."
+    "On the PC side, get any laptop with a mobile Nvidia 3xxx or 4xxx GPU, with the most GPU VRAM that you can afford. You don't want to run CPU inference on regular system RAM because it will be a lot slower."
 
-"RAM quantity/speed is more relevant than anything else. I mean you're not going to get good performance on a literal potato because compute does matter, but you'll get a much bigger speedup going from 3200mhz DDR4 to 6000mhz DDR5 than you will from a quad core to a 12+ core CPU."
+    "RAM quantity/speed is more relevant than anything else. I mean you're not going to get good performance on a literal potato because compute does matter, but you'll get a much bigger speedup going from 3200mhz DDR4 to 6000mhz DDR5 than you will from a quad core to a 12+ core CPU."
 
-https://www.reddit.com/r/LocalLLaMA/comments/18yz3ba/best_models_for_cpu_without_gpu/
-
-
-"A small model like that (8B) will run on the CPU just fine, you don't need a GPU."
-
-https://www.reddit.com/r/LocalLLaMA/comments/1cj5um2/best_model_for_low_end_pc/
-
-"What if I have a miniPC with 32GB of RAM?"
-
-"I'm able to run Wizard-Vicuna-13B-GGML 8bit at around 4 tokens/s and Wizard-Vicuna-30B-GGML 4bit at .9 tokens/s on a beelink 7735hs with 32 gig."
-
-https://www.reddit.com/r/LocalLLaMA/comments/13wnuuo/whats_the_best_local_llm_for_low_to_medium_end/
+    https://www.reddit.com/r/LocalLLaMA/comments/18yz3ba/best_models_for_cpu_without_gpu/
 
 
-"If you intend to work on a local LlaMa often, consider a cheap laptop that remotes into a beefy PC with lots of ram and a good GPU. You can upgrade your desktop frequently and you don’t have to worry about your laptop overheating or weighing a ton or any of that."
-
-"8gb ram with a quad core CPU for good 7B inference
-Thank you, I hate these entitled posts: "Is it my 16 core CPU with newest nvidia 24GB VRAM enough to run llm?"
+  --- 
 
 
-"4GB RAM or 2GB GPU / You will be able to run only 3B models at 4-bit, but don't expect great performance from them as they need a lot of steering to get anything really meaningful out of them. Even most phones can run these models using something like MLC."
+    "A small model like that (8B) will run on the CPU just fine, you don't need a GPU."
 
-"8GB RAM or 4GB GPU / You should be able to run 7B models at 4-bit with alright speeds, if they are llama models then using exllama on GPU will get you some alright speeds, but running on CPU only can be alright depending on your CPU. Some higher end phones can run these models at okay speeds using MLC. (Might get out of memory errors, have not tested 7B on GPU with 4GB of RAM so not entirely sure, but under Linux you might be able to just fine, but windows could work too, just not sure about memory)."
-
-"16GB RAM or 8GB GPU / Same as above for 13B models under 4-bit except for the phone part since a very high end phone could, but never seen one running a 13B model before, though it seems possible."
-
-"On a desktop CPU it would be 10-12 t/s, for the notebook CPU I would assume about half of that."
-
-"I'd also mention that, if you're going the CPU-only route, you'll need a processor that supports at least the AVX instruction set. Personally, I wouldn't try with anything that doesn't also support AVX2 but if you're looking for bare minimum, that'd be any Intel Sandy Bridge or later or AMD Bulldozer or later processors. AVX2 was introduced in Haswell and Excavator architectures respectively."
-
-https://www.reddit.com/r/LocalLLaMA/comments/15s8crb/whats_the_bare_minimum_specs_needed_for_running_ai/
+    https://www.reddit.com/r/LocalLLaMA/comments/1cj5um2/best_model_for_low_end_pc/
 
 ---
 
-What’s the bare minimum specs needed for running ai?
+      "What if I have a miniPC with 32GB of RAM?"
 
-"Amplifying what many others are saying, you can run many models on just a normal PC computer without a GPU. I've been benchmarking upwards of 50 different models on my PC which is only an i5-8400 with 32 Gig of RAM. Here's a list of models and the kind of performance I'm seeing."
+      "I'm able to run Wizard-Vicuna-13B-GGML 8bit at around 4 tokens/s and Wizard-Vicuna-30B-GGML 4bit at .9 tokens/s on a beelink 7735hs with 32 gig."
 
-https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fwhats-the-bare-minimum-specs-needed-for-running-ai-v0-p7phjivyjiib1.png%3Fwidth%3D1103%26format%3Dpng%26auto%3Dwebp%26s%3D4ef213132fe2b5b23326ae241ca3fb5defe57390
+      https://www.reddit.com/r/LocalLLaMA/comments/13wnuuo/whats_the_best_local_llm_for_low_to_medium_end/
 
-"For reference, I've just tried running a local llama.cpp (llamafile) on a MacBook Pro from 2011 (i5 2nd gen. Sandy Bridge, 16GB DDR3-MacOS12) and got about 3tps with Phi-3-mini-4k-instruct and 2tps using Meta-Llama-3-8B-Instruct."
+---
 
-"I ran a 7b q4 gmml on an old laptop with 8gb RAM yesterday. 1.5t/s. Just choose the right model and you will be OK. You can go for 3b ones if you really need it."
+      "If you intend to work on a local LlaMa often, consider a cheap laptop that remotes into a beefy PC with lots of ram and a good GPU. You can upgrade your desktop frequently and you don’t have to worry about your laptop overheating or weighing a ton or any of that."
 
-"You can run a 3B model on a 6Gb Android phone."
+      "8gb ram with a quad core CPU for good 7B inference
+      Thank you, I hate these entitled posts: "Is it my 16 core CPU with newest nvidia 24GB VRAM enough to run llm?"
 
-"8GB RAM, any CPU, no GPU can run a 4 bit quantised 7 billion weights llm at low to usable speeds."
+      "4GB RAM or 2GB GPU / You will be able to run only 3B models at 4-bit, but don't expect great performance from them as they need a lot of steering to get anything really meaningful out of them. Even most phones can run these models using something like MLC."
 
-https://www.reddit.com/r/LocalLLaMA/comments/15s8crb/whats_the_bare_minimum_specs_needed_for_running_ai/
+      "8GB RAM or 4GB GPU / You should be able to run 7B models at 4-bit with alright speeds, if they are llama models then using exllama on GPU will get you some alright speeds, but running on CPU only can be alright depending on your CPU. Some higher end phones can run these models at okay speeds using MLC. (Might get out of memory errors, have not tested 7B on GPU with 4GB of RAM so not entirely sure, but under Linux you might be able to just fine, but windows could work too, just not sure about memory)."
+
+      "16GB RAM or 8GB GPU / Same as above for 13B models under 4-bit except for the phone part since a very high end phone could, but never seen one running a 13B model before, though it seems possible."
+
+      "On a desktop CPU it would be 10-12 t/s, for the notebook CPU I would assume about half of that."
+
+      "I'd also mention that, if you're going the CPU-only route, you'll need a processor that supports at least the AVX instruction set. Personally, I wouldn't try with anything that doesn't also support AVX2 but if you're looking for bare minimum, that'd be any Intel Sandy Bridge or later or AMD Bulldozer or later processors. AVX2 was introduced in Haswell and Excavator architectures respectively."
+
+      https://www.reddit.com/r/LocalLLaMA/comments/15s8crb/whats_the_bare_minimum_specs_needed_for_running_ai/
+
+---
+
+    What’s the bare minimum specs needed for running ai?
+
+    "Amplifying what many others are saying, you can run many models on just a normal PC computer without a GPU. I've been benchmarking upwards of 50 different models on my PC which is only an i5-8400 with 32 Gig of RAM. Here's a list of models and the kind of performance I'm seeing."
+
+    https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fwhats-the-bare-minimum-specs-needed-for-running-ai-v0-p7phjivyjiib1.png%3Fwidth%3D1103%26format%3Dpng%26auto%3Dwebp%26s%3D4ef213132fe2b5b23326ae241ca3fb5defe57390
+
+---
+
+    "For reference, I've just tried running a local llama.cpp (llamafile) on a MacBook Pro from 2011 (i5 2nd gen. Sandy Bridge, 16GB DDR3-MacOS12) and got about 3tps with Phi-3-mini-4k-instruct and 2tps using Meta-Llama-3-8B-Instruct."
+
+    "I ran a 7b q4 gmml on an old laptop with 8gb RAM yesterday. 1.5t/s. Just choose the right model and you will be OK. You can go for 3b ones if you really need it."
+
+    "You can run a 3B model on a 6Gb Android phone."
+
+    "8GB RAM, any CPU, no GPU can run a 4 bit quantised 7 billion weights llm at low to usable speeds."
+
+    https://www.reddit.com/r/LocalLLaMA/comments/15s8crb/whats_the_bare_minimum_specs_needed_for_running_ai/
+
+---
+
+    "you don't even need a GPU to run local models. as long as you have enough system ram, you can run them off your CPU alone."
+
+    "you can experiment with different quantization levels to reduce the size and complexity of the models. Quantization is a technique that compresses the weights of the neural network by using fewer bits to represent them. This can speed up the inference time and lower the memory usage of the models. However, it can also affect the accuracy and quality of the outputs, so you have to find a balance that works for you."
+
+    https://www.reddit.com/r/LocalLLaMA/comments/14q5n5c/any_option_for_a_low_end_pc/
+
+---
+
+    "I 1,000% recommend opening it up and replacing the thermal paste between your CPU and the cooler, if you haven’t done this already."
+
+    You’re going to be putting that CPU through its paces, and it’s probably still got the original paste on there and it’s 5 years old at this point, and you wanna make sure it runs as cool as possible.
+
+    Oh, and use Linux too. It takes much less RAM for itself. Windows, even Windows 7 will hog all this memory for itself."
+    
+    https://www.reddit.com/r/LocalLLaMA/comments/14q5n5c/comment/jqlsook/
+
+---
 
 
-"you don't even need a GPU to run local models. as long as you have enough system ram, you can run them off your CPU alone."
+    "You can run on CPU if speed isn't a concern or if you run small models. You need to make sure you have enough ram though"
 
-"you can experiment with different quantization levels to reduce the size and complexity of the models. Quantization is a technique that compresses the weights of the neural network by using fewer bits to represent them. This can speed up the inference time and lower the memory usage of the models. However, it can also affect the accuracy and quality of the outputs, so you have to find a balance that works for you."
+    "I run Ollama on my home PC, 32 Gig of Ram, and an i9 CPU . Just recently added voice-to-txt and txt-to-voice capabilities for better interaction. It's smooth with no GPU support."
 
-https://www.reddit.com/r/LocalLLaMA/comments/14q5n5c/any_option_for_a_low_end_pc/
+    https://www.reddit.com/r/ollama/comments/1da7lqg/cheapest_way_to_run_llm_server_at_home/
 
+---
 
-"I 1,000% recommend opening it up and replacing the thermal paste between your CPU and the cooler, if you haven’t done this already."
+    "I keep seeing posts for building to a specific budget but had a thought “How cheaply could a machine possibly be built?” Of course there will be a lower boundary for model size but what are your thoughts for the least expensive way to run an LLM with no internet connection?"
 
-You’re going to be putting that CPU through its paces, and it’s probably still got the original paste on there and it’s 5 years old at this point, and you wanna make sure it runs as cool as possible.
+    "Personally, I believe mlc LLM on an android phone is the highest value per dollar option since you can technically run a 7B model for around $50-100 on a used android phone with a cracked screen."
 
-Oh, and use Linux too. It takes much less RAM for itself. Windows, even Windows 7 will hog all this memory for itself."
- 
-https://www.reddit.com/r/LocalLLaMA/comments/14q5n5c/comment/jqlsook/
+    "It's a lot cheaper to get an answer in 10 minutes than in 10 seconds."
 
-"You can run on CPU if speed isn't a concern or if you run small models. You need to make sure you have enough ram though"
+    "You can get an off-lease dell or Lenovo SFF desktop with an older i5 and 16gb RAM for under $100. It'll run rings around any ARM SBC."
 
-"I run Ollama on my home PC, 32 Gig of Ram, and an i9 CPU . Just recently added voice-to-txt and txt-to-voice capabilities for better interaction. It's smooth with no GPU support."
+    "Currently running Orca Mini 3B on a Raspberry Pi 400 and quite happy with it. Managed to get Piper TTS also running along with it. All in 4 GB RAM, 2k context."
 
-https://www.reddit.com/r/ollama/comments/1da7lqg/cheapest_way_to_run_llm_server_at_home/
+    "Grab yourself a Raspberry Pi 4 with 8 GB RAM, download and compile llama.cpp and there it goes: local LLM for under 100 USD. Takes 5 mins to set up and you can use quantized 7B models at ~0.5 to 1 token/s. Yes, it's slow, painfully slow, but it works.  For larger models, merge more Pis into a MPI cluster for more RAM, but don't expect reasonable performance (here's where you will switch your wording from "tokens per second" to "seconds per token")."
 
+    https://www.reddit.com/r/LocalLLaMA/comments/16eyxgw/absolute_cheapest_local_llm/
 
-"I keep seeing posts for building to a specific budget but had a thought “How cheaply could a machine possibly be built?” Of course there will be a lower boundary for model size but what are your thoughts for the least expensive way to run an LLM with no internet connection?"
+---
 
-"Personally, I believe mlc LLM on an android phone is the highest value per dollar option since you can technically run a 7B model for around $50-100 on a used android phone with a cracked screen."
+    "Just CPU. It's slow but works. I will put the prompt in and come back in a few minutes to see how things are going."
 
-"It's a lot cheaper to get an answer in 10 minutes than in 10 seconds."
+    Advice on Building a GPU PC for LLM with a $1,500 Budget
 
-"You can get an off-lease dell or Lenovo SFF desktop with an older i5 and 16gb RAM for under $100. It'll run rings around any ARM SBC."
+    https://www.reddit.com/r/LocalLLaMA/comments/1drnbq7/advice_on_building_a_gpu_pc_for_llm_with_a_1500/
 
-"Currently running Orca Mini 3B on a Raspberry Pi 400 and quite happy with it. Managed to get Piper TTS also running along with it. All in 4 GB RAM, 2k context."
+---
 
-"Grab yourself a Raspberry Pi 4 with 8 GB RAM, download and compile llama.cpp and there it goes: local LLM for under 100 USD. Takes 5 mins to set up and you can use quantized 7B models at ~0.5 to 1 token/s. Yes, it's slow, painfully slow, but it works.  For larger models, merge more Pis into a MPI cluster for more RAM, but don't expect reasonable performance (here's where you will switch your wording from "tokens per second" to "seconds per token")."
-
-https://www.reddit.com/r/LocalLLaMA/comments/16eyxgw/absolute_cheapest_local_llm/
-
-
-"Just CPU. It's slow but works. I will put the prompt in and come back in a few minutes to see how things are going."
-
-Advice on Building a GPU PC for LLM with a $1,500 Budget
-
-https://www.reddit.com/r/LocalLLaMA/comments/1drnbq7/advice_on_building_a_gpu_pc_for_llm_with_a_1500/
-
-"I don't know why people are dumping on you for having modest hardware.
-I was using a T560 with 8GB of RAM for a while for guanaco-7B.ggmlv3.q4_K_M.bin inference, and that worked fine.
-Pick out a nice 4-bit quantized 7B model, and be happy.
-If it's too slow, try 4-bit quantized Marx-3B, which is smaller and thus faster, and pretty good for its size."
-https://www.reddit.com/r/LocalLLaMA/comments/16imcc0/recommend_a_local_llm_for_low_spec_laptop/
+    "I don't know why people are dumping on you for having modest hardware.
+    I was using a T560 with 8GB of RAM for a while for guanaco-7B.ggmlv3.q4_K_M.bin inference, and that worked fine.
+    Pick out a nice 4-bit quantized 7B model, and be happy.
+    If it's too slow, try 4-bit quantized Marx-3B, which is smaller and thus faster, and pretty good for its size."
+    https://www.reddit.com/r/LocalLLaMA/comments/16imcc0/recommend_a_local_llm_for_low_spec_laptop/
 
 
 
 ## Image Generation on Low-End PCs
 
+### Why is image generation more resource intensive than doing text generation?
+
+- Data Size: Images contain millions of pixels with color information, resulting in significantly larger datasets compared to text.
+- Computational Complexity: Image models must process spatial data for each pixel, involving complex operations like convolutional layers that are computationally intensive.
+- Parameter Size: State-of-the-art image generation models often have millions or tens of millions of parameters, whereas text models typically have fewer.
+- Memory Requirements: Generating an image requires substantial memory to store intermediate representations and perform computations across the entire image grid.
+- Training Data: Image training datasets are massive and require high storage and computational resources during training.
+- Inference Time: Generating a single image can take several minutes to hours, depending on model complexity and available hardware.
+- Hardware Requirements: High(er)-end GPUs with ample memory are often necessary for efficient image generation.
+
+
+### Tips for Image Generation on Low-End PCs 
 
 - Image generation "tokens per second" isn't a standard metric like it is for text LLMs. Instead, image generation speed is measured in images generated per second or time taken to generate a single image.
 
-- **CPU:** While the CPU plays a role in managing overall processes, its impact on image generation speed is less direct compared to GPUs. It handles tasks like loading data and preprocessing but the heavy lifting of image synthesis is done by the GPU.
-- **RAM:** Sufficient RAM is crucial for holding the model weights and image data during processing. Low RAM can lead to slowdowns as the system swaps data between RAM and the slower hard drive.
-- **VRAM:** This is the most critical factor. Image generation models, especially those based on diffusion models, are extremely memory intensive. A dedicated GPU with ample VRAM is recommended for decent performance. 
-  - 4GB VRAM min is strongly recommended
-- **Smaller Models**: Opt for smaller, less complex image generation models. There are many open-source alternatives to popular large models that require significantly less VRAM.
-- **Lower Resolution**: Generating images at lower resolutions (e.g., 512x512 instead of 1024x1024) drastically reduces VRAM usage and processing time.
-  - You can upscale smaller images later.
-- **Reduce Sampling Steps**: Diffusion models generate images through multiple sampling steps. Decreasing the number of steps can speed up generation but might result in lower quality images.
-- **Batch Processing**: If you need to generate multiple images, consider batch processing. This allows the GPU to work more efficiently.
-- **Software** https://github.com/rupeshs/fastsdcpu
-  - More in tools.md in this repo.
+  - **CPU:** While the CPU plays a role in managing overall processes, its impact on image generation speed is less direct compared to GPUs. It handles tasks like loading data and preprocessing but the heavy lifting of image synthesis is done by the GPU.
+  - **RAM:** Sufficient RAM is crucial for holding the model weights and image data during processing. Low RAM can lead to slowdowns as the system swaps data between RAM and the slower hard drive.
+  - **VRAM:** This is the most critical factor. Image generation models, especially those based on diffusion models, are extremely memory intensive. A dedicated GPU with ample VRAM is recommended for decent performance. 
+    - 4GB VRAM min is strongly recommended
+  - **Smaller Models**: Opt for smaller, less complex image generation models. There are many open-source alternatives to popular large models that require significantly less VRAM.
+  - **Lower Resolution**: Generating images at lower resolutions (e.g., 512x512 instead of 1024x1024) drastically reduces VRAM usage and processing time.
+    - You can upscale smaller images later.
+  - **Reduce Sampling Steps**: Diffusion models generate images through multiple sampling steps. Decreasing the number of steps can speed up generation but might result in lower quality images.
+  - **Batch Processing**: If you need to generate multiple images, consider batch processing. This allows the GPU to work more efficiently.
+  - **Software** https://github.com/rupeshs/fastsdcpu
+    - More in tools.md in this repo.
 
 
-### Clippings related to image-generation on low-end PCs. 
+### Clippings/Quotes related to image-generation on low-end PCs. 
 
-You can run A1111 all on CPU if you add all these command line arguments to the webuser-ui.bat : --use-cpu all --precision full --no-half --skip-torch-cuda-test
+    You can run A1111 all on CPU if you add all these command line arguments to the webuser-ui.bat : --use-cpu all --precision full --no-half --skip-torch-cuda-test
 
-You can also run ComfyUI purely on CPU, just start it using the run_cpu.bat no extra steps needed.
+    You can also run ComfyUI purely on CPU, just start it using the run_cpu.bat no extra steps needed.
 
-They will be very very slow but still work. Only way to know if they will work for your system is to try them.
+    They will be very very slow but still work. Only way to know if they will work for your system is to try them.
 
-https://www.reddit.com/r/StableDiffusion/comments/17bzn30/running_sd_locally_without_a_gpu/
+    https://www.reddit.com/r/StableDiffusion/comments/17bzn30/running_sd_locally_without_a_gpu/
 
-"Sure, it'll just run on the CPU and be considerably slower. Might need at least 16GB of RAM."
+---
 
-"I use pc with no dedicated gpu, 16 gb of RAM. It takes around 4 minutes to render 512x512 picture, 25 steps."
+    "Sure, it'll just run on the CPU and be considerably slower. Might need at least 16GB of RAM."
 
-https://www.reddit.com/r/StableDiffusion/comments/108hsd3/can_i_run_sd_without_a_dedicated_gpu/
+    "I use pc with no dedicated gpu, 16 gb of RAM. It takes around 4 minutes to render 512x512 picture, 25 steps."
 
+    https://www.reddit.com/r/StableDiffusion/comments/108hsd3/can_i_run_sd_without_a_dedicated_gpu/
 
-"I wanted to try running it on my CPU only setup without GPU to see if there's anyway that I can run without GPU but still made it so I would love to learn from your tips
+---
 
-My setups includes:
-▸ Quad-core CPU (Intel Core i7-1165G7)
-▸ 64 GB RAM
-They took me ~10-15 minutes per image (512x512 resolution) and ~8 GB RAM memory usage."
-https://www.redditmedia.com/r/StableDiffusion/comments/1hiee9l/anyone_running_stable_diffusion_without_gpu/
+    "I wanted to try running it on my CPU only setup without GPU to see if there's anyway that I can run without GPU but still made it so I would love to learn from your tips
 
+    My setups includes:
+    ▸ Quad-core CPU (Intel Core i7-1165G7)
+    ▸ 64 GB RAM
+    They took me ~10-15 minutes per image (512x512 resolution) and ~8 GB RAM memory usage."
+    https://www.redditmedia.com/r/StableDiffusion/comments/1hiee9l/anyone_running_stable_diffusion_without_gpu/
 
-
-## Speech on Low-End PCs
-
-https://www.redditmedia.com/r/LocalLLaMA/comments/1fx9lo9/speech_to_text_on_laptop_without_api_calls/
-
-
-## Additional Local AI/ML Limitations
-
-- Bias and Fairness: The training data used to create a language model may inadvertently reflect biases present in the training set, leading to potentially discriminatory or inappropriate outputs in generated text.
-  - If a language model is trained on unfiltered or biased data, it may inadvertently generate hallucinations by incorporating misinformation into its outputs.
-- Hallucinations refer to incorrect or fantastical responses that a model generates instead of real, accurate information. These errors can arise for several reasons and pose significant challenges. 
-  - Understanding Hallucination in LLMs: Causes, Consequences, and Mitigation Strategies: https://medium.com/@gcentulani/understanding-hallucination-in-llms-causes-consequences-and-mitigation-strategies-b5e1d0268069
-  - Does Your Model Hallucinate? Tips and Tricks on How to Measure and Reduce Hallucinations in LLMs: https://deepsense.ai/blog/does-your-model-hallucinate-tips-and-tricks-on-how-to-measure-and-reduce-hallucinations-in-llms/
-  - To address these challenges related to hallucinations, researchers and developers are continuously working on improving model training methods, enhancing data quality, and developing techniques to detect and correct errors in generated content. 
 
 
 ---
@@ -379,7 +431,7 @@ https://www.redditmedia.com/r/LocalLLaMA/comments/1fx9lo9/speech_to_text_on_lapt
 
 Zotero is an open-source research management tool that helps scholars collect, organize and cite sources efficiently.  Zotero's official repository is on GitHub: https://github.com/zotero. 
 
-LocalML Zotero Library: [https://www.zotero.org/groups/5718368/localml/library](https://www.zotero.org/groups/5718368/localml/library)
+LocalML Zotero Library: [https://www.zotero.org/groups/5718368/localml/library](https://www.zotero.org/groups/5718368/localml/library). Here you can find some resources nad publications used for building this repository.
 
 If you would like to access the PDFs and web snapshots in this group library please do the following steps.
 1. Go here https://www.zotero.org/groups/5718368/localml/
@@ -391,7 +443,7 @@ If you would like to access the PDFs and web snapshots in this group library ple
 
 ## Hugging Face
 
-The platform where the machine learning community collaborates on models, datasets, and applications.
+The platform where the AI/machine learning community collaborates on models, datasets, and applications.
 
 - [Hugging Face Documentation](https://huggingface.co/docs)
 - [Hugging Face GitHub Repository](https://github.com/huggingface)
@@ -399,9 +451,12 @@ The platform where the machine learning community collaborates on models, datase
 
 ## Leaderboards
 
-### Livebench
+AI leaderboards serve as valuable resources for tracking and comparing the performance of various machine learning models across different benchmarks and datasets. They provide insights into the state-of-the-art in AI research and development, helping researchers, practitioners, and organizations evaluate and select the most effective algorithms for their specific applications.
 
-- [Livebench AI Website](https://livebench.ai/#/)
+Livebench - [Livebench AI Website](https://livebench.ai/#/)
+
+HF Open LLM Leaderboard - https://huggingface.co/open-llm-leaderboard 
+
 
 ## Models
 
@@ -444,8 +499,32 @@ The platform where the machine learning community collaborates on models, datase
 
 # Text Generation Tools and Platforms
 
-## Why might this be useful for community networking and/or capacity building?
+## Why might text generation be useful for community networking and/or capacity building?
 
+### Education and Training
+
+First, and perhaps foremost, local or offline text generation can play a crucial role in training and capacity building related to community networking, especially when it comes to building and managing network infrastructure. 
+
+- Localized Documentation: Offline text generation allows the creation of comprehensive, locally tailored documentation on various aspects of network infrastructure, including setup, maintenance, troubleshooting, and security. This ensures that training materials are culturally relevant and contextually accurate.
+- Guided Tutorials: Interactive tutorials can be generated offline to guide community members step-by-step through the process of setting up and managing local networks. These tutorials can include practical examples, diagrams, and code snippets specific to their infrastructure.
+
+Example Use Cases:
+
+- Network Setup Guides: Generate comprehensive, step-by-step guides for setting up local network infrastructure, including hardware selection, cable management, and initial configuration.
+- Troubleshooting Manuals: Create detailed troubleshooting manuals with common issues and solutions specific to the community's network setup.
+- Security Protocols: Develop offline security protocols and best practices to protect the community's network from unauthorized access and cyber threats.
+- Emergency Response Plans: Generate contingency plans for dealing with network outages, including communication strategies, critical information dissemination, and recovery procedures.
+- Training Workshops: Use local text generation tools to produce interactive workshop materials, including case studies, quizzes, and hands-on exercises for participants.
+
+
+### Additional Considerations
+
+- Accessibility: In regions with limited internet access or unreliable connectivity, local text generation tools ensure that communities can still generate and share content without relying on external services.
+- Independence: Local text generation models allow communities to produce their own content independently. They do not need continuous access to servers or cloud-based services, which means they are less dependent on outside influences or disruptions that could halt their activities.
+- Language Preservation: In many underconnected regions, local dialects and languages may be at risk of being overshadowed by dominant global languages. Offline text generation tools can support the preservation and promotion of these unique linguistic identities by enabling communities to create content in their native tongues without needing internet access.
+- Customization and Control: Local models can be fine-tuned to better understand and generate text relevant to specific community needs and contexts. This customization ensures that content is more accurate, culturally sensitive, and meaningful to the community members.
+- Cost-Effectiveness: Implementing local text generation solutions is often more cost-effective than relying on expensive cloud-based services. It can empower communities with fewer financial resources to develop their own digital literacy skills and create valuable content tailored to their needs.
+- Cultural Documentation: Offline text generation supports the documentation and dissemination of cultural heritage through storytelling, literature, and other forms of written content. This helps preserve cultural identities and ensures that community histories are recorded and shared within the community.
 
 
 ## Running LLM on Android Devices
@@ -493,29 +572,6 @@ Project Goals
 - https://github.com/shubham0204/SmolChat-Android
 
 
-## Running LLM on Docker
-
-Discussion: https://www.reddit.com/r/LocalLLaMA/comments/17v5r0p/a_fun_day_evaluating_llm_chat_guisservers_in/
-
-## Open WebUI
-- https://github.com/open-webui/open-webui
-
-- https://docs.openwebui.com/
-
-## Ollama
-- https://hub.docker.com/r/ollama/ollama
-
-## OpenVINO
-- https://docs.openvino.ai/2024/index.html
-
-## PrivateGPT
-- https://github.com/zylon-ai/private-gpt
-
-
-
-## Anything LLM
-- - https://github.com/Mintplex-Labs/anything-llm
-
 
 
 ## Ollama
@@ -530,6 +586,8 @@ Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language mo
 Run LLMs locally without internet with Ollama
 - https://medium.com/@pratikgtm/run-llms-locally-without-internet-with-ollama-1305ee83ceb7
 
+
+- https://hub.docker.com/r/ollama/ollama
 
 ## GPT4All
 
@@ -645,6 +703,15 @@ While large language models have shown impressive capabilities, they often requi
     Green Technology: Advocates efficient usage of resources with reduced carbon footprint
     Easier Academic Research Development: Provides an easy starter for academic research with cutting-edge LLMs with less logistical constraints
 
+## OpenVINO
+- https://docs.openvino.ai/2024/index.html
+
+## PrivateGPT
+- https://github.com/zylon-ai/private-gpt
+
+
+## Anything LLM
+- https://github.com/Mintplex-Labs/anything-llm
 
 
 ## gpt4free
@@ -671,7 +738,9 @@ PrivateGPT is a production-ready AI project that allows you to ask questions abo
 
  - https://github.com/open-webui/open-webui
 
-  openwebui.com 
+- https://github.com/open-webui/open-webui
+
+- https://docs.openwebui.com/
 
 
 ## Lobe Chat
@@ -704,7 +773,23 @@ LocalGPT is an open-source initiative that allows you to converse with your docu
 
 # Text - Translation Tools and Platforms
 
+
 ## Why might this be useful for community networking and/or capacity building?
+
+- These tools can be used instead of Google Translate or DeepL.
+- Many of the more popular models have built-in translation capability. There are also specific models and datasets for less prevalent languages. 
+- Accessibility: Enables people with limited internet access to use translation tools without relying on cloud connectivity.
+- Language Preservation: Helps preserve endangered languages by facilitating translation into more widely spoken languages.
+- Cost-Effectiveness: Provides affordable solutions for translating large volumes of text compared to human translators.
+- Disaster Response: Assists in communication during emergencies by translating essential information across language boundaries.
+
+## Opus
+
+https://opus.nlpl.eu/
+
+https://github.com/Helsinki-NLP/OPUS
+
+Public data sets and tools for translation. 
 
 
 ## InkubaLM
@@ -721,22 +806,72 @@ Lelapa AI is committed to linguistic diversity and digital inclusivity by offeri
 
 * https://huggingface.co/lelapa/InkubaLM-0.4B
 
+## Aya
 
+Aya Expanse 8B is an open-weight research release of a model with highly advanced multilingual capabilities. It focuses on pairing a highly performant pre-trained Command family of models with the result of a year’s dedicated research from Cohere For AI, including data arbitrage, multilingual preference training, safety tuning, and model merging. The result is a powerful multilingual large language model.
+
+https://huggingface.co/CohereForAI/aya-expanse-8b
+
+
+## Other
+
+
+    I just tested a whole bunch of models that can be run locally for translation tasks. I tested some of their larger variants too, but in general I think these observations apply to their smaller versions as well:
+
+    This is what I found for free models specifically targeted at translation:
+
+        NLLB-200-distilled-1.3B (proprietary license may be a problem)
+
+        OPUS-MT (Apache 2.0 license)
+
+        MADLAD-400 (Apache 2.0 license)
+
+    Despite the above tools being targeted specifically at translation, I found their performance to be mediocre. Surprisingly I had much better results with these general text-generation instruction-oriented models:
+
+        deepseek-r1:14b (MIT license)
+
+        huihui_ai/qwen2.5-1m-abliterated:14b (Apache 2.0 license)
+
+        Mistral-Small-24B-Instruct-2501-GGUF:Q8_0 (Apache 2.0 license)
+
+        gemma2 (weird license but allows most use cases)
+
+    The above models produced much more natural and understandable results, even with difficult idioms and style formalities of the source language. Even compared to something like DeepL the above models produced noticeably better translations.
+
+    If you just need to translate some standard terms, like a form or a certificate or something, then the specifically translation-oriented tools might be more consistent and possibly more accurate. But for actual paragraphs of formal or informal text the general purpose models were incredibly good.
+
+    https://www.reddit.com/r/LocalLLaMA/comments/1iln1lj/good_local_llm_for_text_translation/
+
+
+---
 
 
 # Text - RAG Tools and Platforms
 
+## What is RAG?
+
+RAG, or Retrieval-Augmented Generation,  that leverages both retrieval-based and generation-based techniques to enhance the performance and capabilities of large language models (LLMs).  In the context of local AI and LLMs, RAG can significantly improve the utility and relevance of text generation by incorporating knowledge from a dedicated knowledge base directly into the generated responses 
+
+This approach not only improves the accuracy and relevance of text generated by AI systems but also ensures that they are well-suited to the unique needs and challenges faced by different communities.
+
+
+
 ## Why might this be useful for community networking and/or capacity building?
 
+In more simple terms, when you use an LLM for chat, it grabs information from the model itself (a contained/static model) AND whatever documents or data you feed to it. This makes the resposes far more useful and accurate. 
+
+In this case, we would be to take a large collection of community-centered connectivity publications, resources, and datasets, and "chat" with the LLM about this content.
+
+An example is UniFi GPT (https://community.ui.com/). Ubiquiti has fed data about their hardware into a chatbot/"UniFi expert".  Users can then ask very technical questions about networking hardware and services.
+
+Another example is https://www.washai.org. "The days of google'ing for Water, Sanitation & Hygiene (WASH) knowledge is over. Delivering interactive context-specific insights in your language, WASH AI informs your decision-making with its advanced AI capabilities, and helps you understand WASH complexities using simple language and references to resources."
+
+Incorporating domain-specific knowledge from a local repository improves the accuracy of responses, making them more reliable for tasks like customer support, technical documentation, or community engagement
 
 
-## Sort
-
-https://medium.com/@nydas/building-an-offline-rag-chatbot-with-custom-frontend-and-websockets-3a739878adf1
+## RAG Tools
 
 https://github.com/jonfairbanks/local-rag
-
-
 
 
 ## Datasets
@@ -872,6 +1007,13 @@ The most powerful and modular diffusion model GUI and backend.
 
 
 
+
+## Speech on Low-End PCs
+
+https://www.redditmedia.com/r/LocalLLaMA/comments/1fx9lo9/speech_to_text_on_laptop_without_api_calls/
+
+
+
 ## Whisper
 
 Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification.
@@ -881,6 +1023,8 @@ A Transformer sequence-to-sequence model is trained on various speech processing
 * https://github.com/openai/whisper
 
 * https://arxiv.org/pdf/2212.04356
+
+
 
 
 #### How to install and use Whisper offline (no internet required)
