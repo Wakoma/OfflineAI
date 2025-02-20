@@ -16,6 +16,7 @@ Contributions/issues/PRs are very welcome.
 CC-BY-SA-4.0
 
 
+
 ---
 
 # Table of Contents
@@ -34,7 +35,8 @@ CC-BY-SA-4.0
   - [Speech on Low-End PCs](#speech-on-low-end-pcs)
   - [Additional Local Machine Learning Limitations](#additional-local-machine-learning-limitations)
 - [Local Machine Learning General Resources](#local-machine-learning-general-resources)
-    - [Hugging Face](#hugging-face)
+  - [Zotero Library](#zotero-library)
+  - [Hugging Face](#hugging-face)
   - [Leaderboards](#leaderboards)
     - [Livebench](#livebench)
   - [Models](#models)
@@ -42,7 +44,7 @@ CC-BY-SA-4.0
   - [Reddit Groups](#reddit-groups)
   - [GitHub Awesome Lists](#github-awesome-lists)
   - [Prompt Engineering](#prompt-engineering)
-  - [AI research](#ai-research)
+  - [AI Research](#ai-research)
 - [Text Generation Tools and Platforms](#text-generation-tools-and-platforms)
   - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building)
   - [Running LLM on Android Devices](#running-llm-on-android-devices)
@@ -111,6 +113,7 @@ CC-BY-SA-4.0
   - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-7)
   - [Trellis](#trellis)
   - [Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts](#text2cad-generating-sequential-cad-designs-from-beginner-to-expert-level-text-prompts)
+- [tinyML](#tinyml)
 
 
 
@@ -371,74 +374,70 @@ https://www.redditmedia.com/r/LocalLLaMA/comments/1fx9lo9/speech_to_text_on_lapt
 
 # Local Machine Learning General Resources
 
-LocalML Zotero Library: https://www.zotero.org/groups/5718368/localml/library
+## Zotero Library
+
+Zotero is an open-source research management tool that helps scholars collect, organize and cite sources efficiently.  Zotero's official repository is on GitHub: https://github.com/zotero. 
+
+LocalML Zotero Library: [https://www.zotero.org/groups/5718368/localml/library](https://www.zotero.org/groups/5718368/localml/library)
+
+If you would like to access the PDFs and web snapshots in this group library please do the following steps.
+1. Go here https://www.zotero.org/groups/5718368/localml/
+2. On the top right, click log in, or register if you don't have a Zotero account.
+3. Refresh the page to access the content on your browser.
+4. Option 2: Install Zotero desktop (https://www.zotero.org/download/), then log into your account.  The group content will automatically sync to your computer.
+  
 
 
-### Hugging Face 
+## Hugging Face
 
 The platform where the machine learning community collaborates on models, datasets, and applications.
 
-- https://huggingface.co/docs
-
-- https://github.com/huggingface
-
-- https://github.com/huggingface/transformers
-
-
+- [Hugging Face Documentation](https://huggingface.co/docs)
+- [Hugging Face GitHub Repository](https://github.com/huggingface)
+- [Transformers](https://github.com/huggingface/transformers)
 
 ## Leaderboards
 
 ### Livebench
 
-- https://livebench.ai/#/
-
-
+- [Livebench AI Website](https://livebench.ai/#/)
 
 ## Models
 
-- https://huggingface.co/models
-
-- https://github.com/Troyanovsky/Local-LLM-Comparison-Colab-UI
-
-- https://www.openml.org/
-
+- [Hugging Face Models Catalog](https://huggingface.co/models)
+- [Local-LLM-Comparison-Colab-UI Repository](https://github.com/Troyanovsky/Local-LLM-Comparison-Colab-UI)
+- [OpenML.org](https://www.openml.org/)
 
 ## Wiki Articles
 
-- https://en.wikipedia.org/wiki/Generative_artificial_intelligence
+- [Wikipedia Article on Generative Artificial Intelligence](https://en.wikipedia.org/wiki/Generative_artificial_intelligence)
 
 ## Reddit Groups
-- https://www.reddit.com/r/LocalLLaMA/
-- https://www.reddit.com/r/MachineLearning/
-- https://www.reddit.com/r/MLQuestions/
+
+- [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/)
+- [r/MachineLearning](https://www.reddit.com/r/MachineLearning/)
+- [r/MLQuestions](https://www.reddit.com/r/MLQuestions/)
 
 ## GitHub Awesome Lists
 
-* https://github.com/janhq/awesome-local-ai
-
-* https://github.com/vince-lam/awesome-local-llms
-
-* https://github.com/mahseema/awesome-ai-tools
-
-* https://github.com/steven2358/awesome-generative-ai
-
+* [awesome-local-ai](https://github.com/janhq/awesome-local-ai)
+* [awesome-local-llms](https://github.com/vince-lam/awesome-local-llms)
+* [awesome-ai-tools](https://github.com/mahseema/awesome-ai-tools)
+* [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
 
 ## Prompt Engineering
 
-* https://www.promptingguide.ai/
+- [Prompting Guide AI Website](https://www.promptingguide.ai/)
+- [Hugging Face Prompt Engineering Guide Repository](https://github.com/dair-ai/Prompt-Engineering-Guide)
+- [Awesome ChatGPT Prompts Repository](https://github.com/f/awesome-chatgpt-prompts)
 
-* https://github.com/dair-ai/Prompt-Engineering-Guide
+## AI Research
 
-* https://github.com/f/awesome-chatgpt-prompts
+* [Awesome AI Data GitHub Repositories](https://github.com/youssefHosni/Awesome-AI-Data-GitHub-Repos)
+* [Awesome AI Papers Repository](https://github.com/aimerou/awesome-ai-papers)
+* [Awesome LLM Inference Repository](https://github.com/DefTruth/Awesome-LLM-Inference)
 
-
-## AI research 
-
-* https://github.com/youssefHosni/Awesome-AI-Data-GitHub-Repos
-
-* https://github.com/aimerou/awesome-ai-papers
-
-* https://github.com/DefTruth/Awesome-LLM-Inference
+---
 
 
 
@@ -452,21 +451,16 @@ The platform where the machine learning community collaborates on models, datase
 
 ### MLC LLM
 
-MLC LLM is a machine learning compiler and high-performance deployment engine for large language models. The mission of this project is to enable everyone to develop, optimize, and deploy AI models natively on everyone's platforms. 
+MLC LLM is a machine learning compiler and high-performance deployment engine for large language models. The mission of this project is to enable everyone to develop, optimize, and deploy AI models natively on their platforms.
 
-* https://github.com/mlc-ai/mlc-llm
+- [GitHub Repository](https://github.com/mlc-ai/mlc-llm)
+- [XDA Developers Article](https://www.xda-developers.com/run-local-llms-smartphone/)
+- [Reddit Discussion](https://www.reddit.com/r/LocalLLaMA/comments/16t0lbw/best_model_to_run_locally_on_an_android_phone/)
+- [MLC Docs - Android Deployment](https://llm.mlc.ai/docs/deploy/android.html)
+- [KDNuggets Guide](https://www.kdnuggets.com/install-run-llms-locally-android-phones)
+- [Beebom Article](https://beebom.com/how-run-llm-locally-mlc-chat-android-phones/)
 
-* https://www.xda-developers.com/run-local-llms-smartphone/
-
-* https://www.reddit.com/r/LocalLLaMA/comments/16t0lbw/best_model_to_run_locally_on_an_android_phone/
-
-* https://llm.mlc.ai/docs/deploy/android.html
-
-* https://www.kdnuggets.com/install-run-llms-locally-android-phones
-
-* https://beebom.com/how-run-llm-locally-mlc-chat-android-phones/
-
-
+These resources provide detailed guides and insights into developing, optimizing, and deploying AI models on Android devices using MLC LLM.
 
 
 ### Maid - Mobile Artificial Intelligence Distribution
@@ -977,5 +971,20 @@ TRELLIS is a large 3D asset generation model. It takes in text or image prompts 
 
 ## Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts
 - https://sadilkhan.github.io/text2cad-project/
+
+
+# tinyML
+
+tinyML (short for "tiny Machine Learning") refers to the implementation of machine learning models on resource-constrained devices, such as microcontrollers, IoT devices, or wearable electronics. These devices often have limited processing power, memory, and energy capabilities compared to traditional laptops or desktop computers.
+
+The concept of tinyML aims to bring ML capabilities closer to the data source, reducing latency, improving privacy, and enabling autonomous operations even in low connectivity scenarios. It is particularly relevant for edge computing applications where real-time decisions are critical and cloud connectivity may not be reliable or feasible.
+
+1. **Repositories:**
+	* [tinyml repo](https://github.com/tensorflow/tflite-micro): TensorFlow Lite for Microcontrollers is a lightweight solution for deploying ML models on microcontroller-based devices.
+	* [Adafruit's CircuitPython ML](https://learn.circuitpython.org/en/latest/micropython/code-examples/ml/index.html): Examples and tutorials using machine learning with CircuitPython, a Python implementation for microcontrollers.
+2. **Articles and Tutorials:**
+	* [tinyML Website](https://tinyml.ai/): A community-driven resource hub for tinyML.
+	* ["A Beginner's Guide to TinyML" by Pavan Sankhe](https://www.tutorialspoint.com/tinyml/tinyml_a_beginners_guide.htm): An introduction to tinyML concepts and techniques.
+
 
 
