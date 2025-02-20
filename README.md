@@ -1,13 +1,14 @@
-# LocalML Introduction
-Local/Offline Machine Learning Resources
+# LocalAI Introduction
 
-This repo is intended to be catalog of local, offline, and open-source machine learning (ML) tools and approaches, for enhancing community-centered connectivity and education, particularly in underconnected regions and low-resource contexts.
+Local/Offline AI Resources
 
-If your objective is machine learning/AI without internet, on a standard consumer laptop or desktop PC, or phone, there should be useful resources for you in this repository.
+This repo is intended to be catalog of local, offline, and open-source AI (including machine learning and generative AI) tools and approaches, for enhancing community-centered connectivity and education, particularly in underconnected regions and low-resource contexts.
+
+If your objective is to harness AI without reliable or afforadble internet, on a standard consumer laptop or desktop PC, or phone, there should be useful resources for you in this repository.
 
 We will attempt to label any closed source tools as such.   
 
-The shared Zotero Library for this project can be found here: https://www.zotero.org/groups/5718368/localml/library
+The shared Zotero Library for this project can be found [here](https://www.zotero.org/groups/5718368/localml/library). To join this group and access the files pleaes read [this](https://github.com/Wakoma/LocalML?tab=readme-ov-file#zotero-library).
 
 This research project is generously funded by [APC](https://www.apc.org/). 
 
@@ -21,11 +22,11 @@ CC-BY-SA-4.0
 
 # Table of Contents
 
-- [LocalML Introduction](#localml-introduction)
+- [LocalAI Introduction](#localai-introduction)
 - [Table of Contents](#table-of-contents)
-- [Local Machine Learning Considerations](#local-machine-learning-considerations)
-  - [Benefits of/Reasons for Doing Local/Offline ML](#benefits-ofreasons-for-doing-localoffline-ml)
-  - [Challenges of Local/Offline ML](#challenges-of-localoffline-ml)
+- [Local AI/ML Considerations](#local-aiml-considerations)
+  - [Benefits of/Reasons for Doing Local/Offline AI/ML](#benefits-ofreasons-for-doing-localoffline-aiml)
+  - [Challenges of Local/Offline AI/ML](#challenges-of-localoffline-aiml)
   - [Resource requirements](#resource-requirements)
   - [Strategies for Mitigating Resource Requirements:](#strategies-for-mitigating-resource-requirements)
   - [Text-Generation on Low End PCs](#text-generation-on-low-end-pcs)
@@ -33,8 +34,8 @@ CC-BY-SA-4.0
   - [Image Generation on Low-End PCs](#image-generation-on-low-end-pcs)
     - [Clippings related to image-generation on low-end PCs.](#clippings-related-to-image-generation-on-low-end-pcs)
   - [Speech on Low-End PCs](#speech-on-low-end-pcs)
-  - [Additional Local Machine Learning Limitations](#additional-local-machine-learning-limitations)
-- [Local Machine Learning General Resources](#local-machine-learning-general-resources)
+  - [Additional Local AI/ML Limitations](#additional-local-aiml-limitations)
+- [Local AI/ML General Resources](#local-aiml-general-resources)
   - [Zotero Library](#zotero-library)
   - [Hugging Face](#hugging-face)
   - [Leaderboards](#leaderboards)
@@ -119,18 +120,18 @@ CC-BY-SA-4.0
 
 ---
 
-# Local Machine Learning Considerations
+# Local AI/ML Considerations
 
 
 
-##  Benefits of/Reasons for Doing Local/Offline ML
+##  Benefits of/Reasons for Doing Local/Offline AI/ML
 
 - Resilience: Offline machine learning tools are less vulnerable to internet outages and disruptions, ensuring continued functionality in unpredictable environments.
 - Data Privacy:  Processing data locally reduces reliance on cloud services, enhancing privacy and data security
 - Reduced costs: Eliminating the need for constant internet access and potential cloud computing fees can significantly reduce costs
 
 
-## Challenges of Local/Offline ML
+## Challenges of Local/Offline AI/ML
 
 - Computational Resources:  Running complex machine learning models requires significant computational power. Devices in resource-limited settings may lack the necessary processing power and memory.
 - Model Size: Large pre-trained models can be difficult to deploy on devices with limited storage capacity. Techniques like model compression and quantization are crucial but come with trade-offs in accuracy
@@ -360,7 +361,7 @@ https://www.redditmedia.com/r/StableDiffusion/comments/1hiee9l/anyone_running_st
 https://www.redditmedia.com/r/LocalLLaMA/comments/1fx9lo9/speech_to_text_on_laptop_without_api_calls/
 
 
-## Additional Local Machine Learning Limitations
+## Additional Local AI/ML Limitations
 
 - Bias and Fairness: The training data used to create a language model may inadvertently reflect biases present in the training set, leading to potentially discriminatory or inappropriate outputs in generated text.
   - If a language model is trained on unfiltered or biased data, it may inadvertently generate hallucinations by incorporating misinformation into its outputs.
@@ -372,7 +373,7 @@ https://www.redditmedia.com/r/LocalLLaMA/comments/1fx9lo9/speech_to_text_on_lapt
 
 ---
 
-# Local Machine Learning General Resources
+# Local AI/ML General Resources
 
 ## Zotero Library
 
