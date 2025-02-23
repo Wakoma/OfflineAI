@@ -1,4 +1,4 @@
-# LocalAI Introduction
+# OfflineAI Research
 
 Local/Offline AI Resources
 
