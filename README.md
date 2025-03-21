@@ -1,14 +1,15 @@
 # OfflineAI Research
 
-Local/Offline AI Resources
 
-This repo is intended to be catalog of local, offline, and open-source AI (including machine learning and generative AI) tools and approaches, for enhancing community-centered connectivity and education, particularly in underconnected regions and low-resource contexts.
+<p align="center"><img alt="dish" src="https://raw.githubusercontent.com/Wakoma/wakoma-assets/refs/heads/main/general-assets/wakoma-photos/dishmp.jpg" height="auto" width="800"></p>
 
-If your objective is to harness AI without reliable or affordable internet, on a standard consumer laptop or desktop PC, or phone, there should be useful resources for you in this repository.
+This repository is intended to be catalog of local, offline, and open-source AI (including machine learning and generative AI) tools and approaches, for enhancing community-centered connectivity and education, particularly in underconnected regions and low-resource contexts.
+
+**If your objective is to harness AI without reliable or affordable internet, on a standard consumer laptop or desktop PC, or phone, there should be useful resources for you in this repository.**
 
 We will attempt to label any closed source tools as such.   
 
-The shared Zotero Library for this project can be found [here](https://www.zotero.org/groups/5718368/localml/library). To join this group and access the files pleaes read [this](https://github.com/Wakoma/LocalML?tab=readme-ov-file#zotero-library).
+The shared Zotero Library for this project can be found [here](https://www.zotero.org/groups/5718368/localml/library). To join this group and access the files please read [this](https://github.com/Wakoma/LocalML?tab=readme-ov-file#zotero-library).
 
 This research project is generously funded by [APC](https://www.apc.org/). 
 
@@ -24,22 +25,14 @@ CC-BY-SA-4.0
 
 # Table of Contents
 
-- [LocalAI Introduction](#localai-introduction)
+- [OfflineAI Research](#offlineai-research)
 - [Table of Contents](#table-of-contents)
 - [Local AI/ML Considerations](#local-aiml-considerations)
   - [What is "local" AI?](#what-is-local-ai)
-  - [How does AI differ from machine learning, generative AI, LLMs, etc.?](#how-does-ai-differ-from-machine-learning-generative-ai-llms-etc)
-  - [What are the benefits of local AI?](#what-are-the-benefits-of-local-ai)
-  - [What are the challenges of local AI?](#what-are-the-challenges-of-local-ai)
-  - [What are the resource requirements for local AI?](#what-are-the-resource-requirements-for-local-ai)
-  - [Strategies for Mitigating Resource Requirements:](#strategies-for-mitigating-resource-requirements)
   - [Text-Generation on Low End PCs](#text-generation-on-low-end-pcs)
   - [When is internet access required for Local AI?](#when-is-internet-access-required-for-local-ai)
-    - [Clippings/Quotes related to text-generation on low-end PCs.](#clippingsquotes-related-to-text-generation-on-low-end-pcs)
   - [Image Generation on Low-End PCs](#image-generation-on-low-end-pcs)
-    - [Why is image generation more resource intensive than doing text generation?](#why-is-image-generation-more-resource-intensive-than-doing-text-generation)
     - [Tips for Image Generation on Low-End PCs](#tips-for-image-generation-on-low-end-pcs)
-    - [Clippings/Quotes related to image-generation on low-end PCs.](#clippingsquotes-related-to-image-generation-on-low-end-pcs)
 - [Local AI/ML General Resources](#local-aiml-general-resources)
   - [Zotero Library](#zotero-library)
   - [Hugging Face](#hugging-face)
@@ -52,9 +45,6 @@ CC-BY-SA-4.0
   - [Prompt Engineering](#prompt-engineering)
   - [AI Research](#ai-research)
 - [Text Generation Tools and Platforms](#text-generation-tools-and-platforms)
-  - [Why might text generation be useful for community networking and/or capacity building?](#why-might-text-generation-be-useful-for-community-networking-andor-capacity-building)
-    - [Education and Training](#education-and-training)
-    - [Additional Considerations](#additional-considerations)
   - [Running LLM on Android Devices](#running-llm-on-android-devices)
     - [MLC LLM](#mlc-llm)
     - [Maid - Mobile Artificial Intelligence Distribution](#maid---mobile-artificial-intelligence-distribution)
@@ -81,33 +71,30 @@ CC-BY-SA-4.0
   - [Text generation web UI](#text-generation-web-ui)
   - [localGPT](#localgpt)
 - [Text - Translation Tools and Platforms](#text---translation-tools-and-platforms)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building)
   - [Opus](#opus)
   - [InkubaLM](#inkubalm)
   - [Aya](#aya)
   - [Other](#other)
 - [Text - RAG Tools and Platforms](#text---rag-tools-and-platforms)
   - [What is RAG?](#what-is-rag)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-1)
   - [RAG Tools](#rag-tools)
   - [Resources](#resources)
   - [Datasets](#datasets)
   - [WikiChat](#wikichat)
   - [Android-Document-QA](#android-document-qa)
 - [Coding Tools and Platforms](#coding-tools-and-platforms)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-2)
   - [Continue](#continue)
   - [Qwen2.5](#qwen25)
   - [Claude 3.5 Sonnet](#claude-35-sonnet)
 - [Image Generation Tools and Platforms](#image-generation-tools-and-platforms)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-3)
+  - [Forge](#forge)
   - [Fooocus](#fooocus)
   - [Generative AI for Krita](#generative-ai-for-krita)
   - [SD.Next](#sdnext)
   - [Stable Diffusion web UI](#stable-diffusion-web-ui)
   - [ComfyUI](#comfyui)
+  - [More](#more)
 - [Audio Tools and Platforms](#audio-tools-and-platforms)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-4)
   - [Speech on Low-End PCs](#speech-on-low-end-pcs)
   - [Whisper](#whisper)
       - [How to install and use Whisper offline (no internet required)](#how-to-install-and-use-whisper-offline-no-internet-required)
@@ -116,12 +103,10 @@ CC-BY-SA-4.0
     - [FluxMusic](#fluxmusic)
     - [OpenMusic](#openmusic)
 - [Video Generation Tools and Platforms](#video-generation-tools-and-platforms)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-5)
   - [Awesome Video Diffusion](#awesome-video-diffusion)
   - [CogVideo](#cogvideo)
   - [LTX-Video](#ltx-video)
 - [CAD Generation Tools and Platforms](#cad-generation-tools-and-platforms)
-  - [Why might this be useful for community networking and/or capacity building?](#why-might-this-be-useful-for-community-networking-andor-capacity-building-6)
   - [Trellis](#trellis)
   - [Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts](#text2cad-generating-sequential-cad-designs-from-beginner-to-expert-level-text-prompts)
 - [tinyML](#tinyml)
@@ -139,7 +124,7 @@ CC-BY-SA-4.0
 
 AI that runs locally or offline refers to AI (artificial intelligence) technologies and models that are run on a device within your control, without relying on external cloud services or internet connectivity. Instead of using (and sending your data to) services such as ChatGPT, you can use open source software and models completely offline on your own computer.
 
-## How does AI differ from machine learning, generative AI, LLMs, etc.?
+<details><summary><b> How does AI differ from machine learning, generative AI, LLMs, etc.?</b></summary>
 
 - **AI** (artificial intelligence) is a broad field that aims to simulate human intelligence and behavior. Under its umbrella are **machine learning**, **deep learning**, and **generative AI**. All three concepts share a common foundation: learning from data.
 - **Machine learning** is a subset of AI that involves training algorithms to recognize patterns and make predictions based on data.
@@ -148,9 +133,10 @@ AI that runs locally or offline refers to AI (artificial intelligence) technolog
 - **Large Language Models (LLMs)**, like GPT, are a subset of generative AI specifically designed to generate text.
 - LLMs use **transformer architectures** to analyze and understand vast amounts of text data. This enables them to generate human-quality text, even for tasks they haven’t been explicitly trained on (known as **zero-shot learning**).
 
+</details>
 
 
-## What are the benefits of local AI?
+<details><summary><b> What are the benefits of local AI?</b></summary>
 
 - On-Device Processing: The computations required for AI tasks are performed directly on the user's computer, smartphone, tablet, or other connected devices.
 - No Internet Dependency: Unlike cloud-based AI services, which require an active internet connection to send data to servers and receive results, local AI processes everything within the device's own storage and processing power.
@@ -158,28 +144,28 @@ AI that runs locally or offline refers to AI (artificial intelligence) technolog
 - Resource Efficiency: While cloud-based AI can be powerful, it often requires significant computational resources from remote servers. Local AI can leverage the processing power and storage capabilities of devices like smartphones or desktops to handle tasks efficiently.
 - Reliability in Unreliable Networks: In areas with poor internet connectivity or inconsistent service, local AI ensures that users can still perform AI-related tasks without interruption.
 - Cost-Effective: For organizations with limited budgets for cloud services, local AI can be a cost-effective alternative that leverages existing hardware resources.
+</details>
 
 
 
-## What are the challenges of local AI?
+
+<details><summary><b> What are the challenges of local AI?</b></summary>
+
 
 - Computational Resources:  Running complex AI models requires significant computational power. Devices in resource-limited settings may lack the necessary processing power and memory.
 - Model Size: Large pre-trained models can be difficult to deploy on devices with limited storage capacity. Techniques like model compression and quantization are crucial but come with trade-offs in accuracy
 - Data Acquisition and Preprocessing: Obtaining and preparing relevant data for training and deploying models offline can be challenging without reliable internet access for data collection and cleaning.
 - Model Maintenance and Updates: Keeping models up-to-date with new data and improvements can be difficult without regular internet connectivity.
-
-
 - Bias and Fairness: The training data used to create a language model may inadvertently reflect biases present in the training set, leading to potentially discriminatory or inappropriate outputs in generated text.
 - If a language model is trained on unfiltered or biased data, it may inadvertently generate hallucinations by incorporating misinformation into its outputs.
 - Hallucinations refer to incorrect or fantastical responses that a model generates instead of real, accurate information. These errors can arise for several reasons and pose significant challenges. 
 - Understanding Hallucination in LLMs: Causes, Consequences, and Mitigation Strategies: https://medium.com/@gcentulani/understanding-hallucination-in-llms-causes-consequences-and-mitigation-strategies-b5e1d0268069
 - Does Your Model Hallucinate? Tips and Tricks on How to Measure and Reduce Hallucinations in LLMs: https://deepsense.ai/blog/does-your-model-hallucinate-tips-and-tricks-on-how-to-measure-and-reduce-hallucinations-in-llms/
 - To address these challenges related to hallucinations, researchers and developers are continuously working on improving model training methods, enhancing data quality, and developing techniques to detect and correct errors in generated content. 
+</details>
 
 
-
-
-## What are the resource requirements for local AI?
+<details><summary><b> What are the resource requirements for local AI?</b></summary>
 
 1. Computational Power (CPU/GPU)
 
@@ -197,20 +183,24 @@ AI that runs locally or offline refers to AI (artificial intelligence) technolog
 4. Energy Consumption:
 
    - Running powerful models locally can consume considerable energy, which may be a concern in areas with limited access to electricity.
+</details>
 
-
-
-## Strategies for Mitigating Resource Requirements:
+<details><summary><b> Strategies for Mitigating Resource Requirements</b></summary>
 
 - Model Compression: Techniques like pruning and quantization can reduce model size and computational demands without sacrificing too much accuracy.
 - Optimization for Specific Tasks: Fine-tuning pre-trained models for specific tasks can reduce the need for massive models and lower resource requirements.
 - Run the ML tool on one or more PCs and enable other machines on the network to access it/them. In this scenario, laptops and mobile devices without a powerful GPU or CPU can use ML tools via a simple user interface, with a noisy/power-hungry machine placed elsewhere in the network, ideally with power backup. Resources on this here: https://github.com/Wakoma/LocalML/blob/main/resources/tools.md#running-llm-on-docker
+</details>
 
+---
 
-
+&nbsp;
+&nbsp;
+&nbsp;
 
 ## Text-Generation on Low End PCs
 
+<p align="center"><img alt="dish" src="https://gpt4all.io/baroque_gpt4all.gif" height="auto" width="800"></p>
 
 Low-end Machine Tips:
 - TPS: or t/s, means Tokens (words) per second. The higher the better. 1t/s is slow, and you'll be waiting for the output. 
@@ -239,9 +229,9 @@ https://www.howtogeek.com/435644/how-to-see-how-much-ram-is-in-your-pc-and-its-s
 - After this, everything can be done offline/locally.
 
 
+<details><summary><b> Clippings/Quotes related to text-generation on low-end PCs.</b></summary>
 
 
-### Clippings/Quotes related to text-generation on low-end PCs. 
 
     "You can run 13B models with 16 GB RAM but they will be slow because of CPU inference. I'd stick to 3B and 7B if you want speed. Models with more B's (more parameters) will usually be more accurate and more coherent when following instructions but they will be much slower." 
 
@@ -367,11 +357,23 @@ https://www.howtogeek.com/435644/how-to-see-how-much-ram-is-in-your-pc-and-its-s
     If it's too slow, try 4-bit quantized Marx-3B, which is smaller and thus faster, and pretty good for its size."
     https://www.reddit.com/r/LocalLLaMA/comments/16imcc0/recommend_a_local_llm_for_low_spec_laptop/
 
+</details>
 
+---
+
+&nbsp;
+&nbsp;
+&nbsp;
 
 ## Image Generation on Low-End PCs
 
-### Why is image generation more resource intensive than doing text generation?
+
+
+<p align="center"><img alt="dish" src="https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/screenshot.png" height="auto" width="800"></p>
+
+
+
+<details><summary><b> Why is image generation more resource intensive than doing text generation?</b></summary>
 
 - Data Size: Images contain millions of pixels with color information, resulting in significantly larger datasets compared to text.
 - Computational Complexity: Image models must process spatial data for each pixel, involving complex operations like convolutional layers that are computationally intensive.
@@ -380,7 +382,7 @@ https://www.howtogeek.com/435644/how-to-see-how-much-ram-is-in-your-pc-and-its-s
 - Training Data: Image training datasets are massive and require high storage and computational resources during training.
 - Inference Time: Generating a single image can take several minutes to hours, depending on model complexity and available hardware.
 - Hardware Requirements: High(er)-end GPUs with ample memory are often necessary for efficient image generation.
-
+</details>
 
 ### Tips for Image Generation on Low-End PCs 
 
@@ -398,8 +400,7 @@ https://www.howtogeek.com/435644/how-to-see-how-much-ram-is-in-your-pc-and-its-s
   - **Software** https://github.com/rupeshs/fastsdcpu
     - More in tools.md in this repo.
 
-
-### Clippings/Quotes related to image-generation on low-end PCs. 
+<details><summary><b> Clippings/Quotes related to image-generation on low-end PCs.</b></summary>
 
     You can run A1111 all on CPU if you add all these command line arguments to the webuser-ui.bat : --use-cpu all --precision full --no-half --skip-torch-cuda-test
 
@@ -427,10 +428,20 @@ https://www.howtogeek.com/435644/how-to-see-how-much-ram-is-in-your-pc-and-its-s
     They took me ~10-15 minutes per image (512x512 resolution) and ~8 GB RAM memory usage."
     https://www.redditmedia.com/r/StableDiffusion/comments/1hiee9l/anyone_running_stable_diffusion_without_gpu/
 
+</details>
+
+
+&nbsp;
+&nbsp;
+&nbsp;
 
 ---
 
 # Local AI/ML General Resources
+
+<p align="center"><img alt="dish" src="https://www.zotero.org/static/images/home/screenshot-7.0@2x.png" height="auto" width="800"></p>
+
+
 
 ## Zotero Library
 
@@ -503,15 +514,19 @@ HF Open LLM Leaderboard - https://huggingface.co/open-llm-leaderboard
 * [Awesome AI Papers Repository](https://github.com/aimerou/awesome-ai-papers)
 * [Awesome LLM Inference Repository](https://github.com/DefTruth/Awesome-LLM-Inference)
 
+------
 ---
+
+&nbsp;
+
 
 
 
 # Text Generation Tools and Platforms
 
-## Why might text generation be useful for community networking and/or capacity building?
+<details><summary><b> Why might text generation be useful for community networking and/or capacity building?</b></summary>
 
-### Education and Training
+&nbsp;
 
 First, and perhaps foremost, local or offline text generation can play a crucial role in training and capacity building related to community networking, especially when it comes to building and managing network infrastructure. 
 
@@ -527,7 +542,7 @@ Example Use Cases:
 - Training Workshops: Use local text generation tools to produce interactive workshop materials, including case studies, quizzes, and hands-on exercises for participants.
 
 
-### Additional Considerations
+Additional Considerations
 
 - Accessibility: In regions with limited internet access or unreliable connectivity, local text generation tools ensure that communities can still generate and share content without relying on external services.
 - Independence: Local text generation models allow communities to produce their own content independently. They do not need continuous access to servers or cloud-based services, which means they are less dependent on outside influences or disruptions that could halt their activities.
@@ -535,6 +550,13 @@ Example Use Cases:
 - Customization and Control: Local models can be fine-tuned to better understand and generate text relevant to specific community needs and contexts. This customization ensures that content is more accurate, culturally sensitive, and meaningful to the community members.
 - Cost-Effectiveness: Implementing local text generation solutions is often more cost-effective than relying on expensive cloud-based services. It can empower communities with fewer financial resources to develop their own digital literacy skills and create valuable content tailored to their needs.
 - Cultural Documentation: Offline text generation supports the documentation and dissemination of cultural heritage through storytelling, literature, and other forms of written content. This helps preserve cultural identities and ensures that community histories are recorded and shared within the community.
+- 
+</details>
+
+&nbsp;
+
+<p align="center"><img alt="dish" src="https://private-user-images.githubusercontent.com/16845892/294273127-cfc5f47c-bd91-4067-986c-f3f49621a859.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDI1NTU1NTgsIm5iZiI6MTc0MjU1NTI1OCwicGF0aCI6Ii8xNjg0NTg5Mi8yOTQyNzMxMjctY2ZjNWY0N2MtYmQ5MS00MDY3LTk4NmMtZjNmNDk2MjFhODU5LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzIxVDExMDczOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ0ZDk3NDI4ZTIxN2I4MDdjNjlkMWFlMjcwMzU1MjIwYmE3ODdhZGE0MjFiMjExNjc2ZDhjZmNlNTQ0ZGRiZmYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.wsUOY3dL8FmscqgNqQ9YLe4NWmuwrPIzJ-O0M-uknwU" height="auto" width="800"></p>
+
 
 
 ## Running LLM on Android Devices
@@ -780,12 +802,16 @@ LocalGPT is an open-source initiative that allows you to converse with your docu
 - https://github.com/PromtEngineer/localGPT
 
 
+---
+---
 
+&nbsp;
+&nbsp;
+&nbsp;
 
 # Text - Translation Tools and Platforms
 
-
-## Why might this be useful for community networking and/or capacity building?
+<details><summary><b> Why might translation be useful for community networking and/or capacity building?</b></summary>
 
 - These tools can be used instead of Google Translate or DeepL.
 - Many of the more popular models have built-in translation capability. There are also specific models and datasets for less prevalent languages. 
@@ -793,6 +819,13 @@ LocalGPT is an open-source initiative that allows you to converse with your docu
 - Language Preservation: Helps preserve endangered languages by facilitating translation into more widely spoken languages.
 - Cost-Effectiveness: Provides affordable solutions for translating large volumes of text compared to human translators.
 - Disaster Response: Assists in communication during emergencies by translating essential information across language boundaries.
+</details>
+
+&nbsp;
+
+<p align="center"><img alt="dish" src="https://huggingface.co/CohereForAI/aya-expanse-8b/media/main/aya-expanse-8B.png" height="auto" width="800"></p>
+
+
 
 ## Opus
 
@@ -854,10 +887,20 @@ https://huggingface.co/CohereForAI/aya-expanse-8b
     https://www.reddit.com/r/LocalLLaMA/comments/1iln1lj/good_local_llm_for_text_translation/
 
 
+
+---
 ---
 
+&nbsp;
+&nbsp;
+&nbsp;
 
 # Text - RAG Tools and Platforms
+
+
+<p align="center"><img alt="dish" src="https://docs.gpt4all.io/assets/syrio_snippets.png" height="auto" width="800"></p>
+
+
 
 ## What is RAG?
 
@@ -865,8 +908,8 @@ RAG, or Retrieval-Augmented Generation,  that leverages both retrieval-based and
 
 This approach not only improves the accuracy and relevance of text generated by AI systems but also ensures that they are well-suited to the unique needs and challenges faced by different communities.
 
+<details><summary><b> Why might RAG be useful for community networking and/or capacity building?</b></summary>
 
-## Why might this be useful for community networking and/or capacity building?
 
 In more simple terms, when you use an LLM for chat, it grabs information from the model itself (a contained/static model) AND whatever documents or data you feed to it. This makes the resposes far more useful and accurate. 
 
@@ -877,6 +920,8 @@ An example is UniFi GPT (https://community.ui.com/). Ubiquiti has fed data about
 Another example is https://www.washai.org. "The days of google'ing for Water, Sanitation & Hygiene (WASH) knowledge is over. Delivering interactive context-specific insights in your language, WASH AI informs your decision-making with its advanced AI capabilities, and helps you understand WASH complexities using simple language and references to resources."
 
 Incorporating domain-specific knowledge from a local repository improves the accuracy of responses, making them more reliable for tasks like customer support, technical documentation, or community engagement
+
+</details>
 
 
 
@@ -919,20 +964,29 @@ A simple Android app that allows the user to add a PDF/DOCX document and ask nat
 - - https://github.com/shubham0204/Android-Document-QA
 
 
+---
+---
+
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 # Coding Tools and Platforms
 
-## Why might this be useful for community networking and/or capacity building?
+<p align="center"><img alt="dish" src="https://docs.continue.dev/assets/images/actions-7d5b6b48fbf43eb6dbbb9ff7f42598a0.gif" height="auto" width="800"></p>
+
+
+&nbsp;
+
+<details><summary><b> Why might this be useful for community networking and/or capacity building?</b></summary>
 
 - In underconnected communities without access to resources such as stackoverflow, offline ML coding tools could be use for software development and education. 
-
 - AI-assisted coding tools can empower local citizen scientists to analyze data collected offline (e.g., weather patterns, agricultural yields, health trends) and develop solutions using generated code.
 
+</details>
 
-
-What's the current best way to use AI coding assistants in VSCode?:
-- https://www.redditmedia.com/r/vscode/comments/1fpqzh9/whats_the_current_best_way_to_use_ai_coding/
+&nbsp;
 
 
 ## Continue
@@ -965,16 +1019,37 @@ Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we rele
 ## Claude 3.5 Sonnet
 
 - https://www.anthropic.com/news/3-5-models-and-computer-use
+  
+---
+---
+
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 # Image Generation Tools and Platforms
 
-## Why might this be useful for community networking and/or capacity building?
+
+<details><summary><b> Why might this be useful for community networking and/or capacity building?</b></summary>
+
 
 - Imagine a community wanting to build its own Wi-Fi network using readily available materials. AI image generation could translate technical instructions into clear visual guides. Complex steps like wiring hardware, configuring antennas, or troubleshooting connections could be illustrated through easily understandable diagrams and animations.
 - Communities can create localized learning materials by generating visuals for topics ranging from basic computer literacy to advanced networking concepts. This empowers individuals to acquire technical skills independently, fostering self-reliance and innovation.
-- Communities can use AI to generate visualizations of potential connectivity infrastructure based on their specific geography and needs. This helps them plan strategically, identify optimal locations for access points
-  
+- Communities can use AI to generate visualizations of potential connectivity infrastructure based on their specific geography and needs. This helps them plan strategically, identify optimal locations for access points.
+
+</details>
+&nbsp;
+
+<p align="center"><img alt="dish" src="https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/screenshot.png" height="auto" width="800"></p>
+
+
+
+## Forge
+
+Stable Diffusion WebUI Forge is a platform on top of Stable Diffusion WebUI (based on Gradio ) to make development easier, optimize resource management, speed up inference, and study experimental features.
+
+https://github.com/lllyasviel/stable-diffusion-webui-forge
 
 
 ## Fooocus
@@ -1020,13 +1095,34 @@ The most powerful and modular diffusion model GUI and backend.
 - https://github.com/comfyanonymous/ComfyUI
 
 
+## More
+
+What's the current best way to use AI coding assistants in VSCode?:
+- https://www.redditmedia.com/r/vscode/comments/1fpqzh9/whats_the_current_best_way_to_use_ai_coding/
+  
+
+---
+---
+
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 # Audio Tools and Platforms
 
-## Why might this be useful for community networking and/or capacity building?
 
 
+<details><summary><b> Why might this be useful for community networking and/or capacity building?</b></summary>
+
+
+
+</details>
+
+
+&nbsp;
+&nbsp;
+<p align="center"><img alt="dish" src="https://raw.githubusercontent.com/openai/whisper/main/approach.png" height="auto" width="800"></p>
 
 
 
@@ -1082,12 +1178,24 @@ OpenMusic: SOTA Text-to-music (TTM) Generation
 
 - https://github.com/ivcylc/qa-mdt
 
+---
+---
+
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 # Video Generation Tools and Platforms
 
-## Why might this be useful for community networking and/or capacity building?
+<details><summary><b> Why might this be useful for community networking and/or capacity building?</b></summary>
 
+
+</details>
+
+&nbsp;
+
+<p align="center"><img alt="dish" src="https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/screenshot.png" height="auto" width="800"></p>
 
 
 ## Awesome Video Diffusion
@@ -1111,17 +1219,31 @@ LTX-Video is the first DiT-based video generation model that can generate high-q
 
 - https://github.com/Lightricks/LTX-Video
 
+---
+---
+
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 # CAD Generation Tools and Platforms
 
-## Why might this be useful for community networking and/or capacity building?
+
+<details><summary><b> Why might this be useful for community networking and/or capacity building?</b></summary>
 
 - Users without technical expertise in 3D printing/additive manufacturing would be able to type in a prompt or use a reference image to generate a 3D model which could be printed/built locally. For example one could type the dimensions of a mount or bracket, or hardware case, to produce a CAD model for local production.
 
 - Individuals without specialized training can leverage these tools to create customized designs for 3D printing, potentially leading to local production of connectivity-related tools, educational models, and more. This fosters self-reliance and innovation at a grassroots level.
 
 - On-demand repairs facilitated by AI-generated instructions.
+
+</details>
+
+&nbsp;
+
+<p align="center"><img alt="dish" src="https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/screenshot.png" height="auto" width="800"></p>
+
 
 
 ## Trellis
