@@ -3,7 +3,7 @@
 
 <p align="center"><img alt="dish" src="https://raw.githubusercontent.com/Wakoma/wakoma-assets/refs/heads/main/general-assets/wakoma-photos/dishmp.jpg" height="auto" width="800"></p>
 
-This repository is intended to be catalog of local, offline, and open-source AI (including machine learning and generative AI) tools and approaches, for enhancing community-centered connectivity and education, particularly in underconnected regions and low-resource contexts.
+This repository is intended to be catalog of local, offline, and open-source AI (including machine learning and generative AI) tools and approaches, for enhancing community-centered connectivity and education, particularly in areas without accessible, reliable, or afforable internet.   
 
 **If your objective is to harness AI without reliable or affordable internet, on a standard consumer laptop or desktop PC, or phone, there should be useful resources for you in this repository.**
 
@@ -1195,7 +1195,7 @@ OpenMusic: SOTA Text-to-music (TTM) Generation
 
 &nbsp;
 
-<p align="center"><img alt="dish" src="https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/screenshot.png" height="auto" width="800"></p>
+
 
 
 ## Awesome Video Diffusion
@@ -1242,7 +1242,6 @@ LTX-Video is the first DiT-based video generation model that can generate high-q
 
 &nbsp;
 
-<p align="center"><img alt="dish" src="https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/screenshot.png" height="auto" width="800"></p>
 
 
 
