@@ -3,7 +3,7 @@
 
 <p align="center"><img alt="dish" src="https://raw.githubusercontent.com/Wakoma/wakoma-assets/refs/heads/main/general-assets/wakoma-photos/dishmp.jpg" height="auto" width="800"></p>
 
-This repository is intended to be catalog of local, offline, and open-source AI (including machine learning and generative AI) tools and approaches, for enhancing community-centered connectivity and education, particularly in areas without accessible, reliable, or afforable internet.   
+This repository is intended to be catalog of local, offline, and open-source AI (including machine learning and generative AI) tools and approaches, for enhancing community-centered connectivity and education, particularly in areas without accessible, reliable, or affordable internet.   
 
 **If your objective is to harness AI without reliable or affordable internet, on a standard consumer laptop or desktop PC, or phone, there should be useful resources for you in this repository.**
 
@@ -84,8 +84,9 @@ CC-BY-SA-4.0
   - [Android-Document-QA](#android-document-qa)
 - [Coding Tools and Platforms](#coding-tools-and-platforms)
   - [Continue](#continue)
-  - [Qwen2.5](#qwen25)
-  - [Claude 3.5 Sonnet](#claude-35-sonnet)
+  - [Coding Models](#coding-models)
+    - [Qwen2.5](#qwen25)
+    - [Claude 3.5 Sonnet](#claude-35-sonnet)
 - [Image Generation Tools and Platforms](#image-generation-tools-and-platforms)
   - [Forge](#forge)
   - [Fooocus](#fooocus)
@@ -555,8 +556,6 @@ Additional Considerations
 
 &nbsp;
 
-<p align="center"><img alt="dish" src="https://private-user-images.githubusercontent.com/16845892/294273127-cfc5f47c-bd91-4067-986c-f3f49621a859.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDI1NTU1NTgsIm5iZiI6MTc0MjU1NTI1OCwicGF0aCI6Ii8xNjg0NTg5Mi8yOTQyNzMxMjctY2ZjNWY0N2MtYmQ5MS00MDY3LTk4NmMtZjNmNDk2MjFhODU5LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzIxVDExMDczOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ0ZDk3NDI4ZTIxN2I4MDdjNjlkMWFlMjcwMzU1MjIwYmE3ODdhZGE0MjFiMjExNjc2ZDhjZmNlNTQ0ZGRiZmYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.wsUOY3dL8FmscqgNqQ9YLe4NWmuwrPIzJ-O0M-uknwU" height="auto" width="800"></p>
-
 
 
 ## Running LLM on Android Devices
@@ -996,7 +995,9 @@ https://github.com/continuedev/continue
 "Continue is the leading open-source AI code assistant. You can connect any models and any context to build custom autocomplete and chat experiences inside VS Code and JetBrains".
 
 
-## Qwen2.5
+## Coding Models
+
+### Qwen2.5
 
 Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. 
 
@@ -1016,7 +1017,7 @@ Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we rele
 
 
 
-## Claude 3.5 Sonnet
+### Claude 3.5 Sonnet
 
 - https://www.anthropic.com/news/3-5-models-and-computer-use
   
