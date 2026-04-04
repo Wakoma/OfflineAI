@@ -676,6 +676,13 @@ Jan is an open source alternative to ChatGPT that runs 100% offline on your comp
 
 jan.ai/
 
+## Typer
+
+Typer is a free local AI chat app for macOS (Apple Silicon). It runs entirely on-device with no account, no cloud, and no ads. Works fully offline — download a model once and chat without internet. Includes on-device web search.
+
+- https://typer.space
+- https://apps.apple.com/app/typer-ai/id6751274483
+
 ## Llama.cpp
 
 - https://github.com/ggerganov/llama.cpp
