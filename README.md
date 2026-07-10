@@ -676,6 +676,11 @@ Jan is an open source alternative to ChatGPT that runs 100% offline on your comp
 
 jan.ai/
 
+## Off Grid AI Desktop
+Private, local-first AI desktop app for macOS. Runs LLM chat, image generation, whisper transcription, and RAG over your own data fully on-device via llama.cpp; nothing leaves the machine. AGPL-3.0.
+
+- https://github.com/off-grid-ai/off-grid-ai-desktop
+
 ## Llama.cpp
 
 - https://github.com/ggerganov/llama.cpp
