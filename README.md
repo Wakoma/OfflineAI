@@ -229,6 +229,8 @@ https://www.howtogeek.com/435644/how-to-see-how-much-ram-is-in-your-pc-and-its-s
 - To connect for occasional updates (optional)
 - After this, everything can be done offline/locally.
 
+For a Windows example, this [offline AI USB guide](https://ranis2023.github.io/ostum-desktop/en/doomsday-ai/) ([Russian edition](https://ranis2023.github.io/ostum-desktop/doomsday-ai/)) shows how to take the installer and model weights to a disconnected PC, then test a first prompt and check an answer against a local document.
+
 
 <details><summary><b> Clippings/Quotes related to text-generation on low-end PCs.</b></summary>
 
